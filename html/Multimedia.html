@@ -9,352 +9,352 @@
 </head>
 <body>
     <section id="SectMultimediaInserción">
-        <h2>Elemtos Multimedia y de Inserción</h2>
+        <h2>Elementos Multimedia y de Inserción</h2>
         <div id="audio">
             <h3>Audio</h3>
-            <p>Se trata de una etiqueta para reproducir audio en la pagina, se utiliza de una forma similar a la etiqeta video, Debido a las patentes que poseen algunos formatos de audio no todos los navegadores pueden aceptar los mismos formatos, en la actualidad son dos los formatos más utilizados en la industria, estos son: "mp3" y "ogg", de modo que para que el archivo de audio este disponible para casi todos los navegadores lo más recomendable es incluir el archivo en cuastion una vez por cada formato, es decir una vez por "mp3" y una vez por "ogg".</p>
-            <p>Para optimizar esto utilizamos el elemto "sourse", el cual se incluye dentro de la etiqueta "audio", usando el atributo "src" dentro de este, la función de los elemtos sourse esque el navegador pueda elejir el formato de  audio que sea compatible con este, para esto usa el atributo "type" del elemto "sourse", este atributo es leido por el navegador para ubicar el formato de audio que es compatible, si el atributo "type" no se incorpora el navegador probara cada elemto hasta encontrar en formato de audio que sea compatible, aumentando el tiempo de ejecución. </p>
-            <p>La etiqueta "audio" al tratarse de una etiqueta HTML5 existen navegadores que aún no estan capacitados para ejecutarla, por lo tanto la estuctura de esta etiqueta no solo debe de incluir los atributos de "src", si no que tambien a una etiqueta "p" con un mensaje de notificación, este parrafo sera bicible en aquellos casos en los que no sea posible ejecutar el archivos de audio, ya sea por un tema de compatibilidad o de conexión, por lo tanto es recomedablequ esste parrafo contenga un texto de notificación y si de verdad es muy necesario el audio tambien un enlace directo al archivo de audio </p>
+            <p>Se trata de una etiqueta para reproducir audio en la página, se utiliza de una forma similar a la etiqueta video. Debido a las patentes que poseen algunos formatos de audio, no todos los navegadores pueden aceptar los mismos formatos; en la actualidad son dos los formatos más utilizados en la industria, estos son: "mp3" y "ogg", de modo que para que el archivo de audio esté disponible para casi todos los navegadores, lo más recomendable es incluir el archivo en cuestión una vez por cada formato, es decir, una vez por "mp3" y una vez por "ogg".</p>
+            <p>Para optimizar esto utilizamos el elemento "source", el cual se incluye dentro de la etiqueta "audio", usando el atributo "src" dentro de este. La función de los elementos source es que el navegador pueda elegir el formato de audio que sea compatible con este; para esto usa el atributo "type" del elemento "source", este atributo es leído por el navegador para ubicar el formato de audio que es compatible. Si el atributo "type" no se incorpora, el navegador probará cada elemento hasta encontrar el formato de audio que sea compatible, aumentando el tiempo de ejecución. </p>
+            <p>La etiqueta "audio", al tratarse de una etiqueta HTML5, existen navegadores que aún no están capacitados para ejecutarla, por lo tanto la estructura de esta etiqueta no solo debe de incluir los atributos de "src", sino que también una etiqueta "p" con un mensaje de notificación; este párrafo será visible en aquellos casos en los que no sea posible ejecutar los archivos de audio, ya sea por un tema de compatibilidad o de conexión. Por lo tanto, es recomendable que este párrafo contenga un texto de notificación y, si de verdad es muy necesario el audio, también un enlace directo al archivo de audio. </p>
             <img src="./img/ejmAudio.PNG" alt="">
             <h4>Atributos</h4>
             <ul>
-                <li><strong>Autoplay:</strong> indica que el audio se reproduza utomaticamnte bien se cargue, no es muy recomendable su uso ya que los usuarios pueden encontrarlo molesto </li>
+                <li><strong>Autoplay:</strong> indica que el audio se reproduzca automáticamente en cuanto se cargue; no es muy recomendable su uso ya que los usuarios pueden encontrarlo molesto. </li>
                 <li><strong>buffered:</strong> Un atributo que se puede leer para determinar qué intervalos de tiempo del multimedia se han almacenado en búfer. Este atributo contiene un objeto TimeRanges (en-US).</li>
-                <li><strong>Controls:</strong> ofrece controles para que el usuario pueda controlar la reproducción</li>
+                <li><strong>Controls:</strong> ofrece controles para que el usuario pueda controlar la reproducción.</li>
                 <li><strong>Muted: </strong> Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada.</li>
-                <li><strong>Loop: </strong> Hace que el audio comience a reproducirse cada vez que finaliza.Esto puede en ocasiones resultar molesto, por lo que lo mejor es utilizalo solo si es realmente necesario.</li>
+                <li><strong>Loop: </strong> Hace que el audio comience a reproducirse cada vez que finaliza. Esto puede en ocasiones resultar molesto, por lo que lo mejor es utilizarlo solo si es realmente necesario.</li>
                 <li>
-                    <strong>Preload:</strong> Le indica al navegador que inplementacion podria darle una mejor experienc al usuario, puede tener elguno de los siguientes valores: 
+                    <strong>Preload:</strong> Le indica al navegador qué implementación podría darle una mejor experiencia al usuario, puede tener alguno de los siguientes valores: 
                     <ul>
-                        <li><i>none</i> le indica al navegador que el usuario no tendra que consltar el audio, y no sera necesario almacenarlo en cache</li>
-                        <li><i>metadata</i> le indica al navegador que el usuariotendra que conslutar el audio, es rasonable almacenar los metadatos</li>
-                        <li><i>auto</i> indica que el audio tiene proridad, es necesario descargarlo aun si el usuario no lo use</li>
+                        <li><i>none</i> le indica al navegador que el usuario no tendrá que consultar el audio, y no será necesario almacenarlo en caché.</li>
+                        <li><i>metadata</i> le indica al navegador que el usuario tendrá que consultar el audio, es razonable almacenar los metadatos.</li>
+                        <li><i>auto</i> indica que el audio tiene prioridad, es necesario descargarlo aun si el usuario no lo use.</li>
                     </ul>
-                    <p>Si el preload no esta configurdo su balor sera definido por el navegador,</p>
+                    <p>Si el preload no está configurado, su valor será definido por el navegador.</p>
                 </li>
                 <li>
-                    <strong>src:</strong>Indica la url del audio que se va a usar. Su uso es opciona ya que tambien se puede usar el elemento <strong>sourse</strong> dentro del bloque de audio para indicar el audio que se va a insertar
+                    <strong>src:</strong> Indica la URL del audio que se va a usar. Su uso es opcional ya que también se puede usar el elemento <strong>source</strong> dentro del bloque de audio para indicar el audio que se va a insertar.
                     <p>Las compensaciones de tiempo se especifican como valores float que indican el número de segundos que se va a compensar.</p>
                 </li>
             </ul>
-            <p><strong>Nota: los atributos autoplay y preload no fuerzan al navegador a seguir el valor del atributo, son solo una sugerencia</strong></p>
-            <P><strong>Nota: los atributos width y height no tienen efecto en un elemto audio, ya que no hay un componente visual que estructurar</strong></P>
-            <p><strong>Nota: En cualquier momento se puede restablecer al principo el elemento de audio con JavaScript, ubicando el elemento "sourse" por su id y asignando le la propridad "load()"</strong></p>
-            <h4>Incorporar subtitulos</h4>
-            <p>Esto se realiza creando un archivo "WebVTT", este tipo de archivo esta creado con el fin de almacenar cadenas de texto junto con metadatos para indicar en que momento se mostrara cada cadena de texto e incluso información de estilo y posicionamiento. Las cadenas de texto se denominan señales y existen diferentes tipos con diferentes usos:</p>
+            <p><strong>Nota: los atributos autoplay y preload no fuerzan al navegador a seguir el valor del atributo, son solo una sugerencia.</strong></p>
+            <P><strong>Nota: los atributos width y height no tienen efecto en un elemento audio, ya que no hay un componente visual que estructurar.</strong></P>
+            <p><strong>Nota: En cualquier momento se puede restablecer al principio el elemento de audio con JavaScript, ubicando el elemento "source" por su id y asignándole la propiedad "load()".</strong></p>
+            <h4>Incorporar subtítulos</h4>
+            <p>Esto se realiza creando un archivo "WebVTT", este tipo de archivo está creado con el fin de almacenar cadenas de texto junto con metadatos para indicar en qué momento se mostrará cada cadena de texto e incluso información de estilo y posicionamiento. Las cadenas de texto se denominan señales y existen diferentes tipos con diferentes usos:</p>
             <ul>
-                <li><strong>Subtitules (Subtitulos): </strong> Son traduciones de un lenguaje extrnajero usado en le video o audio</li>
-                <li><strong>Captions (Leyendas): </strong> Son transcripciones de dialogos o sonidos significativos para que puedan ser entendidas en situaciones en las que no se puede encuchar el audio </li>
+                <li><strong>Subtitles (Subtítulos): </strong> Son traducciones de un lenguaje extranjero usado en el video o audio.</li>
+                <li><strong>Captions (Leyendas): </strong> Son transcripciones de diálogos o sonidos significativos para que puedan ser entendidas en situaciones en las que no se puede escuchar el audio. </li>
                 <li><strong>timed descriptions (descripciones cronometradas): </strong> Texto para conversión a audio, para atender a personas con discapacidad visual.</li>
             </ul>
-            <p>Un ejemplo de la vista de un codigo WebVTT seria:</p>
+            <p>Un ejemplo de la vista de un código WebVTT sería:</p>
             <img src="./img/EjmWebVTT.PNG" alt="">
-            <p>Para que este archivo se muestre junto con la reproducción de mmedios HTML se debe:</p>
+            <p>Para que este archivo se muestre junto con la reproducción de medios HTML se debe:</p>
             <ol>
-                <li>Guardar el archivo ".vtt" en el lugar correcto</li>
-                <li>Enlazar el archivo ".vtt" con la biñeta "strack". La pista debe colocarse dentro de los elentos audio o video, pero después de todos los elementos de origen (sourse)</li>
-                <li>Usar la biñeta "kind para definir si el archivo se trata de subtitulos, leyendas o descripciones"</li>
+                <li>Guardar el archivo ".vtt" en el lugar correcto.</li>
+                <li>Enlazar el archivo ".vtt" con la viñeta "track". La pista debe colocarse dentro de los elementos audio o video, pero después de todos los elementos de origen (source).</li>
+                <li>Usar la viñeta "kind" para definir si el archivo se trata de subtítulos, leyendas o descripciones.</li>
             </ol>
-            <p>El siguiente es un ejmplo del codigo resultante</p>
+            <p>El siguiente es un ejemplo del código resultante:</p>
             <img src="./img/ejmSubtitulos.PNG" alt="">
-            <p><strong>Nota: en el ejemplo se usa un elemto "video" pero tambien se puede usar con uno "audio"</strong></p>
-            <p><strong>Nota: Se puede usar JavaScript para habilitar el boton de subtitulos, y elegir entre por ejemplo varios lenguajes</strong></p>
-            <p><strong>Nota: Los navegadores se nutrenespecialmente del texto, eso incluye incluso a los suntitulos de un elemto multimedia, lo cual le permite al nevegador vincularse incluso con el fracmento del elemto multimedia que coincida con la busqueda</strong></p>
+            <p><strong>Nota: en el ejemplo se usa un elemento "video" pero también se puede usar con uno "audio".</strong></p>
+            <p><strong>Nota: Se puede usar JavaScript para habilitar el botón de subtítulos, y elegir entre, por ejemplo, varios lenguajes.</strong></p>
+            <p><strong>Nota: Los navegadores se nutren especialmente del texto, eso incluye incluso a los subtítulos de un elemento multimedia, lo cual le permite al navegador vincularse incluso con el fragmento del elemento multimedia que coincida con la búsqueda.</strong></p>
         </div>
         <div id="canvas" >
             <h3>canvas</h3>
-            <p>Se usa para crear graficos atravez de comandos javaScript, tambien se puede usar para crear animaciones y hacer composiciones de fotos. </p> 
-            <p> una etiquetabastante reciente asi que solo esta disponibles en verciones recientes de los navegadores</p>
+            <p>Se usa para crear gráficos a través de comandos JavaScript, también se puede usar para crear animaciones y hacer composiciones de fotos. </p> 
+            <p> Es una etiqueta bastante reciente, así que solo está disponible en versiones recientes de los navegadores.</p>
             <h4>Atributos</h4>
             <ul>
-                <li><strong>width:</strong> Se trata de la anchura del elemento, el valor predeterminado es de 300px</li>
-                <li><strong>height:</strong> Se trata de la altura del elemento, el valor predeterminado es de 150px</li>
+                <li><strong>width:</strong> Se trata de la anchura del elemento, el valor predeterminado es de 300px.</li>
+                <li><strong>height:</strong> Se trata de la altura del elemento, el valor predeterminado es de 150px.</li>
             </ul>
             <h4>Sobre Accesibilidad</h4>
             <p>El elemento canvas no provee ninguna información adicional sobre los elementos que tiene dibujados. El contenido de la etiqueta canvas no se muestra a los lectores de pantalla como otras etiquetas semánticas. Como regla general, deberías evitar utilizar canvas en un sitio accesible.</p>
         </div>
         <div id="embed" >
             <h3>Embed</h3>
-            <p>Representa junto con el elemento "object" es una herramienta de incrustación de proposito general, en otras palabras se diferencia de "iframe" ya que "embeb" puede incrustar multiples tipos de contenido externo que incluyan tecnologuías de complemeto como Java Applets y Flash, en otras palabas puede ejecutar contenido externo y sus plug-in</p>
-            <p><strong>Nota: Un plug-in (complemeto) es un software que permite que el navegador ejecute un elemento con el cual no es compatible de forma nativa</strong></p>
-            <p>En sí el "embeb" es una tecnologuía heredada por HTML5, no es verdaderamente usado ya que los subprogramas con plug-in no se utilizan desde hace algunos años, pese a esto se puede dar alguna sircunstancia de que se encuentre como puede ser en intranets o proyectos empresariales. </p>
+            <p>Representa, junto con el elemento "object", una herramienta de incrustación de propósito general; en otras palabras, se diferencia de "iframe" ya que "embed" puede incrustar múltiples tipos de contenido externo que incluyan tecnologías de complemento como Java Applets y Flash; en otras palabras, puede ejecutar contenido externo y sus plug-in.</p>
+            <p><strong>Nota: Un plug-in (complemento) es un software que permite que el navegador ejecute un elemento con el cual no es compatible de forma nativa.</strong></p>
+            <p>En sí el "embed" es una tecnología heredada por HTML5, no es verdaderamente usado ya que los subprogramas con plug-in no se utilizan desde hace algunos años; pese a esto, se puede dar alguna circunstancia de que se encuentre, como puede ser en intranets o proyectos empresariales. </p>
             <h4>Atributos</h4>
             <ul>
-                <li>Embed incluye los <strong>atributos globales</strong></li>
-                <li><strong>height:</strong> altura mostrada en px</li>
-                <li><strong>width:</strong> ancho mostrado en px</li>
-                <li><strong>src:</strong> La dirección URL del recurso que se está incrustado</li>
-                <li><strong>type:</strong> El tipo MIME que se va a usar para la selección del plug-in para crear una instancia</li>
+                <li>Embed incluye los <strong>atributos globales</strong>.</li>
+                <li><strong>height:</strong> altura mostrada en px.</li>
+                <li><strong>width:</strong> ancho mostrado en px.</li>
+                <li><strong>src:</strong> La dirección URL del recurso que se está incrustado.</li>
+                <li><strong>type:</strong> El tipo MIME que se va a usar para la selección del plug-in para crear una instancia.</li>
             </ul>
        </div>
        <div id="figure">
         <h3>Figure</h3>
-        <p>Es una etiqueta HTML5, se trata de un contenedor con la función de vincular una aimgen con un texto de pie de imagen, cumple un roll semantico</p>
-        <p>La forma de emplearlo consiste en que este elemto contenga en su interior el elemto "img" y el elemto "figcaptión"</p>
+        <p>Es una etiqueta HTML5, se trata de un contenedor con la función de vincular una imagen con un texto de pie de imagen, cumple un rol semántico.</p>
+        <p>La forma de emplearlo consiste en que este elemento contenga en su interior el elemento "img" y el elemento "figcaption".</p>
        </div>
         <div id="iframe">
             <h3>Iframe</h3>
-            <p>Esta biñeta se utiliza para incorporar documetos web en el documeto actual, esto es bueno para poder incluir contenido de terceros sobre el cual no se tenga el control web dentro de la nuestra, por ejmplo de esto esta el siguiente video el cual pese a visualizarse en esta paguina realmete ningun elemto de este se encuentra en la paguina, en su lugar se tomo una sección directamente de la paguina de youtube y se inserto aquí de la siguente manera:</p>
-            <p>Primero que nada recordemos que youtube brinda la opción de incrustar videos en otras paguinas web muy facilmente atrabes de los siguientes pasos:</p>
+            <p>Esta viñeta se utiliza para incorporar documentos web en el documento actual; esto es bueno para poder incluir contenido de terceros sobre el cual no se tenga el control web dentro de la nuestra. Por ejemplo, de esto está el siguiente video el cual, pese a visualizarse en esta página, realmente ningún elemento de este se encuentra en la página; en su lugar se tomó una sección directamente de la página de YouTube y se insertó aquí de la siguiente manera:</p>
+            <p>Primero que nada, recordemos que YouTube brinda la opción de incrustar videos en otras páginas web muy fácilmente a través de los siguientes pasos:</p>
             <ol>
-                <li>Primero nos diriguimos al video que deseamos incorporar</li>
-                <li>Luego hacemos clic en el boton "Compartir"</li>
-                <li>selecionamos la opción de "insertar", y se nos brindara un codigo HTML con la etiqueta "iframe" ya incorporada (podemos configurar algunas cosas sobre el como queremos que se visualise el video en nuestra paguina)</li>
-                <li>Copiamos el codigo y lo incrustamos en el archivo HTML deseado</li>
+                <li>Primero nos dirigimos al video que deseamos incorporar.</li>
+                <li>Luego hacemos clic en el botón "Compartir".</li>
+                <li>Seleccionamos la opción de "insertar", y se nos brindará un código HTML con la etiqueta "iframe" ya incorporada (podemos configurar algunas cosas sobre cómo queremos que se visualice el video en nuestra página).</li>
+                <li>Copiamos el código y lo incrustamos en el archivo HTML deseado.</li>
             </ol> 
-            <p>El resultado es el siguiente</p>
+            <p>El resultado es el siguiente:</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FZS0CVd6XD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Google Maps tambien permite hacer algo muy similar, de la siguiente forma</p>
+            <p>Google Maps también permite hacer algo muy similar, de la siguiente forma:</p>
             <ul>
-                <li>Bamos a Google Maps y buscamos el mapa que deseamos incorporar</li>
-                <li>Hacemos clic en el menú del la esquina superior izquierda de la paguina</li>
-                <li>Selecionamos "Compartir o insertar mapa"</li>
-                <li>Selecionamos la opciaón de "insertar", la cual noz dara un codigo HTML ya estructurado </li>
-                <li>Copiamos el codigo y lo insetamos en nustro archvo HTML para incorporarlo</li>
+                <li>Vamos a Google Maps y buscamos el mapa que deseamos incorporar.</li>
+                <li>Hacemos clic en el menú de la esquina superior izquierda de la página.</li>
+                <li>Seleccionamos "Compartir o insertar mapa".</li>
+                <li>Seleccionamos la opción de "insertar", la cual nos dará un código HTML ya estructurado. </li>
+                <li>Copiamos el código y lo insertamos en nuestro archivo HTML para incorporarlo.</li>
             </ul>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d31995488.28848698!2d-81.07848391210466!3d-11.786213222497603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8e648721ba42e8dd%3A0x5df63fea56d56c66!2zTcOpcmlkYQ!3m2!1d8.5698244!2d-71.1804988!4m5!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA%2C%20Argentina!3m2!1d-34.6036844!2d-58.3815591!5e0!3m2!1ses!2sve!4v1673495657569!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p><strong>Nota: Es muy importante tomar en cuanta el tema de los derechos de autor al usar un "iframe", lo mejor es nunca mostrar contenido del que no se sea el propietario o el duejo brindado un consentimiento por escrito, en el caso de que el contenido sea licensiado se deben optener y cumplir los terminos de la licencia</strong></p>
+            <p><strong>Nota: Es muy importante tomar en cuenta el tema de los derechos de autor al usar un "iframe"; lo mejor es nunca mostrar contenido del que no se sea el propietario o el dueño haya brindado un consentimiento por escrito. En el caso de que el contenido sea licenciado, se deben obtener y cumplir los términos de la licencia.</strong></p>
             <h4>Atributos</h4>
             <ul>
-                <li><strong>allowfullscreen: </strong> Si está configurado, el "iframe" se puede colocar en modo pantalla completa usando el <a href="https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API">Full Screen API</a> </li>
-                <li><strong>Frameborder: </strong> Al asignarle un valor de "1" añade un borde alrededor de todo el elemto incrustado, su balor minimo es "0", actualmete no es recomedable su uso ya que se obtiene el mismo o mejores resultados con CSS</li>
-                <li><strong>Src: </strong> Al igual que en los elementos "video", "audio", "img" Contiene la ruta que apunta al documento a incrustar</li>
-                <li><strong>Contenido de reserva: </strong> Al igual que un elemto "audio" o  "video" el "iframe" incluye un texto que se mostrara en caso de que el navegador no soporte esta biñeta (actualmete es poco probable que se encuentre un navegador que no lo ejecute), se incorpora mediante un elemto "p" dentro de la etiqueta de apertura y de cierre del "iframe" (Suele contener un enlace al documeto que se pretendia insertar)</li>
-                <li><strong>width: </strong> Define la anchura del elemto</li>
-                <li><strong>height: </strong> Define la altura del elemto</li>
-                <li><strong>sandbox: </strong> Este atributo solicita una mayor configuración de seguridad en el "iframe" (Requiere versiones de navegadores más recientes)</li>
+                <li><strong>allowfullscreen: </strong> Si está configurado, el "iframe" se puede colocar en modo pantalla completa usando el <a href="https://developer.mozilla.org/es/docs/Web/API/Fullscreen_API">Full Screen API</a>. </li>
+                <li><strong>Frameborder: </strong> Al asignarle un valor de "1" añade un borde alrededor de todo el elemento incrustado; su valor mínimo es "0", actualmente no es recomendable su uso ya que se obtiene el mismo o mejores resultados con CSS.</li>
+                <li><strong>Src: </strong> Al igual que en los elementos "video", "audio", "img", contiene la ruta que apunta al documento a incrustar.</li>
+                <li><strong>Contenido de reserva: </strong> Al igual que un elemento "audio" o "video", el "iframe" incluye un texto que se mostrará en caso de que el navegador no soporte esta viñeta (actualmente es poco probable que se encuentre un navegador que no lo ejecute); se incorpora mediante un elemento "p" dentro de la etiqueta de apertura y de cierre del "iframe" (suele contener un enlace al documento que se pretendía insertar).</li>
+                <li><strong>width: </strong> Define la anchura del elemento.</li>
+                <li><strong>height: </strong> Define la altura del elemento.</li>
+                <li><strong>sandbox: </strong> Este atributo solicita una mayor configuración de seguridad en el "iframe" (requiere versiones de navegadores más recientes).</li>
             </ul>
-            <p><strong>Nota: Es recomendable establecer el atributo "src" con JavaScript luego de que se carge el contenido principal para de esa forma la paguina la paguina se pueda usar antes y cargue de forma más rapida</strong></p>
+            <p><strong>Nota: Es recomendable establecer el atributo "src" con JavaScript luego de que se cargue el contenido principal para que de esa forma la página se pueda usar antes y cargue de forma más rápida.</strong></p>
             <h4>Seguridad</h4>
-            <p>Los "iframe" son "Vectores de ataque" es decir objetivos de ataque de crakers, por lo tanto pudiesen llegar a ser vulnerabilidades en una paguina web, para esto se han desarrollado varios mecanismos y buenas practicas para hacerlos más seguros.</p>
-            <p><strong>Configurar el Servidor:</strong> Una de estas practicas consiste en incluir en el servidor en el que albergue la paguina una configuración para evitar que la paguina sea incrustada en "iframe" ya que de esta forma se evita que se robe el contenido de la paguina y otros lo reclamen como propio o que inserten el sitio web en una paguina maliciosa para robar información del usuario, sin mencionar que el costo del ancho de vanda consumido por ejecutar el "iframe" correria por parte de la paguina que esta siendo insertada.</p>
-            <p><strong>Aplicarlo solo si es necesario: </strong> Ya que los "iframes" representan un sierto riesgo siempre es bueno limitar su uso a solo aquellos casos en los que sea necesario su implemetación.</p>
-            <p><strong>Usar HTTPS: </strong> HTTPS es la verción encriptada de HTTP, pese a su costo se deberia de incorporar a la paguina web siempre que sea posible, ya que brinda dos grandes ventajas: </p>
+            <p>Los "iframe" son "vectores de ataque", es decir, objetivos de ataque de crackers; por lo tanto, pudiesen llegar a ser vulnerabilidades en una página web. Para esto se han desarrollado varios mecanismos y buenas prácticas para hacerlos más seguros.</p>
+            <p><strong>Configurar el Servidor:</strong> Una de estas prácticas consiste en incluir en el servidor en el que albergue la página una configuración para evitar que la página sea incrustada en "iframe", ya que de esta forma se evita que se robe el contenido de la página y otros lo reclamen como propio o que inserten el sitio web en una página maliciosa para robar información del usuario, sin mencionar que el costo del ancho de banda consumido por ejecutar el "iframe" correría por parte de la página que está siendo insertada.</p>
+            <p><strong>Aplicarlo solo si es necesario: </strong> Ya que los "iframes" representan un cierto riesgo, siempre es bueno limitar su uso a solo aquellos casos en los que sea necesaria su implementación.</p>
+            <p><strong>Usar HTTPS: </strong> HTTPS es la versión encriptada de HTTP; pese a su costo, se debería de incorporar a la página web siempre que sea posible, ya que brinda dos grandes ventajas: </p>
             <ol>
-                <li>Reduce las posivilidades de que el contenido remoto sea manipulado mientras se encuentra en transito</li>
-                <li>Impide que el contenido manipulado acceda al contenido padre y viceversa</li>
+                <li>Reduce las posibilidades de que el contenido remoto sea manipulado mientras se encuentra en tránsito.</li>
+                <li>Impide que el contenido manipulado acceda al contenido padre y viceversa.</li>
             </ol>
-            <p><strong>Nunca se deberia de insertar contenido de terceros mediante el HTTP, debido al gran peligro que conlleva</strong>, una buena solución es <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Using_Github_pages">GitHub pages</a> el cual permite usar HTTPS por defecto, por lo tanto no es necesario tramitar el sertificado de seguridad</p>
-            <p><strong>Siempre usar el atributo "sandbox": </strong> Basicamente consiste en brindarle al elemto y su contenido unicamnte los permisos necesarios para hacer su trabajo, un contenido sin restricciones puede hacer muchas cosas como por ejemplo ejecutar JavaScript, es por eso que se restringe la funcionalidad del elemto y su contenido para reducir las opciones de un craker, El atributo "sandbox" por defecto aplica todas las restricciones posibles al elemento "iframe" pero de ser necesario se pueden volver a conceder permisos uno por uno.<strong>Un recordatorio de seguridad importante es nunca conseder el permiso de allow-scripts como allow-same-origin</strong> ya que estos eventos pudiesen saltarse las medidas de seguridad y ejecutar Scripts para desactivar el "sandbox" por completo</p>
-            <p><strong>Nota: sandbox no evita que un usuario pueda ser engañado por contenido malicioso, si existe alguna posibilidad de que el contenido pudiese ser malicioso lo mejor es publicarlo desde un dominio diferente al principal</strong></p>
-            <p><strong>Configurar directivas CSP: </strong> Esto es con exactitud la configuración de servidor que se nombro con anterioridad, consisten en programar un envio de encabezados HTTP (metadatos) para evitar que la paguina web se presente en un iframe</p>
+            <p><strong>Nunca se debería de insertar contenido de terceros mediante el HTTP, debido al gran peligro que conlleva</strong>. Una buena solución es <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Using_Github_pages">GitHub pages</a>, el cual permite usar HTTPS por defecto, por lo tanto no es necesario tramitar el certificado de seguridad. </p>
+            <p><strong>Siempre usar el atributo "sandbox": </strong> Básicamente consiste en brindarle al elemento y su contenido únicamente los permisos necesarios para hacer su trabajo. Un contenido sin restricciones puede hacer muchas cosas como, por ejemplo, ejecutar JavaScript, es por eso que se restringe la funcionalidad del elemento y su contenido para reducir las opciones de un cracker. El atributo "sandbox" por defecto aplica todas las restricciones posibles al elemento "iframe", pero de ser necesario se pueden volver a conceder permisos uno por uno. <strong>Un recordatorio de seguridad importante es nunca conceder el permiso de allow-scripts junto con allow-same-origin</strong>, ya que estos eventos pudiesen saltarse las medidas de seguridad y ejecutar scripts para desactivar el "sandbox" por completo.</p>
+            <p><strong>Nota: sandbox no evita que un usuario pueda ser engañado por contenido malicioso; si existe alguna posibilidad de que el contenido pudiese ser malicioso, lo mejor es publicarlo desde un dominio diferente al principal.</strong></p>
+            <p><strong>Configurar directivas CSP: </strong> Esto es con exactitud la configuración de servidor que se nombró con anterioridad; consiste en programar un envío de encabezados HTTP (metadatos) para evitar que la página web se presente en un iframe.</p>
             <p><strong>Nota: Una buena regla de oro para la seguridad web es "Nunca puedes ser demasiado cauteloso. Si lo hizo, verifíquelo de todos modos. Si alguien más lo hizo, asuma que es peligroso hasta que se demuestre lo contrario".</strong></p>
         </div>
         <div id="img">
             <h3>Img</h3>
-            <p>Esta etiqueta tiene la función de vincular archivos de imagen para que se visualicen en la paguina, para esto se utiliza el atributo "src"</p>
+            <p>Esta etiqueta tiene la función de vincular archivos de imagen para que se visualicen en la página; para esto se utiliza el atributo "src".</p>
             <h4>Atributos</h4>
             <ul>
-                <li><strong>src: </strong> lugar en el que se almacena la URL del archivo de imagen </li>
-                <li><strong>width: </strong> Define el ancho en la imagen</li>
-                <li><strong>height: </strong> Define el alto en la imagen</li>
-                <li><strong>alt: </strong> Se trata de un texto alterno que describa la imagen, se usa en aquellas situaciones en las que la imagen no pueda ser mostrad, por ejemplo si existe algun error en la carga de las imagenes, o si se utiliza algun motor de lectura en la paguina</li>
-                <li><strong>title: </strong> Asigna un titulo a la imagen, sin embargo no es muy utilizado ya que unicamnete muestra el titulo si se posiciona el raton sobre la imagen, a la ves que puede causar errores en los motores de lectura </li>
+                <li><strong>src: </strong> lugar en el que se almacena la URL del archivo de imagen. </li>
+                <li><strong>width: </strong> Define el ancho de la imagen.</li>
+                <li><strong>height: </strong> Define el alto de la imagen.</li>
+                <li><strong>alt: </strong> Se trata de un texto alterno que describe la imagen; se usa en aquellas situaciones en las que la imagen no pueda ser mostrada, por ejemplo, si existe algún error en la carga de las imágenes, o si se utiliza algún motor de lectura en la página.</li>
+                <li><strong>title: </strong> Asigna un título a la imagen, sin embargo no es muy utilizado ya que únicamente muestra el título si se posiciona el raton sobre la imagen, a la vez que puede causar errores en los motores de lectura. </li>
             </ul>
-            <p><strong>Nota: </strong> Los motores de busqueda tienen en cuenta el texto alternativo al realizar alguna, pueden hacer coincidir la busqueda con este texto </p>
-            <p><strong>Nota: </strong> desactivar las imagenes es una actividad común en lugares con poco ancho de banda o un costo de internet muy alto, en estos casos el "alt" es muy utli</p>
-            <p><strong>Nota: </strong> normalmente se utiliza el width y el height en css, sin embargo si se usa en html, la paguina recervara el aspacio asignado para la imagen aun si esta aun no a termanado de cargar</p>
-            <h4>Imagenes Adaptables</h4>
-            <p>En la web existen dos tipos de formatos de imagen, los vectoreales y los rasterizadas estas ultimas son los formatos como png y jpg los cuales consisten en codigo que le idica al navegador la posición de cada pixel que conpone la imagen, por ello es que la imagen se puede distorcionar cuando  se altera el tamaño o proporción de esta, ya que el navegador seguira esta estructura sin importar que, empezara a hacer ajustes para seguir cumpliendo con eta estructura.</p>
-            <p>Debido a esto es que el como se aprecie una imagen en nuestra paguina se vera enormemente determinado por el dispositivo del que se ingrese y por lo tanto por el tamaño de la pantalla de este, por ejemplo en si agrandamos una imagen para que cumpla con un tamaño adecuado para visualizarse desde una gran pantalla es muy probable que esta pierda calidad y se pixele, por otro lado si tomamos la misma imagen y la reducimos hasta poder visualizarla adecuadamente en un telefono movil es probable que al ser tan pequeña no podamos apreciar adecuadamente el contenido de esta.</p>
-            <p>A esto es que se refiere una imagen adaptable, se trata de ajustar la imagen al tamaña en el que sera visualizada, para ello la solución que se encontro consiste en incorporar varias imagenes en un elemto img cada una editada para visualizarse adecuadamente en un diferente radio de pixeles, por defecto este solo permite vincular una imagen por uso, debido a esto existen los atributos "srcset"y "sizes" </p>
+            <p><strong>Nota: </strong> Los motores de búsqueda tienen en cuenta el texto alternativo al realizar alguna, pueden hacer coincidir la búsqueda con este texto. </p>
+            <p><strong>Nota: </strong> Desactivar las imágenes es una actividad común en lugares con poco ancho de banda o un costo de internet muy alto; en estos casos el "alt" es muy útil.</p>
+            <p><strong>Nota: </strong> Normalmente se utiliza el width y el height en CSS, sin embargo, si se usa en HTML, la página reservará el espacio asignado para la imagen aun si esta aún no ha terminado de cargar.</p>
+            <h4>Imágenes Adaptables</h4>
+            <p>En la web existen dos tipos de formatos de imagen, los vectoriales y las rasterizadas; estas últimas son los formatos como png y jpg los cuales consisten en código que le indica al navegador la posición de cada píxel que compone la imagen. Por ello es que la imagen se puede distorsionar cuando se altera el tamaño o proporción de esta, ya que el navegador seguirá esta estructura sin importar qué, empezará a hacer ajustes para seguir cumpliendo con esta estructura.</p>
+            <p>Debido a esto es que el cómo se aprecie una imagen en nuestra página se verá enormemente determinado por el dispositivo desde el que se ingrese y, por lo tanto, por el tamaño de la pantalla de este. Por ejemplo, si agrandamos una imagen para que cumpla con un tamaño adecuado para visualizarse desde una gran pantalla, es muy probable que esta pierda calidad y se pixele; por otro lado, si tomamos la misma imagen y la reducimos hasta poder visualizarla adecuadamente en un teléfono móvil, es probable que al ser tan pequeña no podamos apreciar adecuadamente el contenido de esta.</p>
+            <p>A esto es a lo que se refiere una imagen adaptable: se trata de ajustar la imagen al tamaño en el que será visualizada. Para ello la solución que se encontró consiste en incorporar varias imágenes en un elemento img, cada una editada para visualizarse adecuadamente en un diferente radio de píxeles. Por defecto este solo permite vincular una imagen por uso; debido a esto existen los atributos "srcset" y "sizes". </p>
             <li>
-                <b>srcset: </b> Define el conjunto de imagenes y su tamaño que el navegador podria eleguir segun el cual sea la más conveniente para el dispositivo, la estructura para separar cada conjunto de información es con una coma, cada conjunto de información esta compuesto por:
+                <b>srcset: </b> Define el conjunto de imágenes y su tamaño que el navegador podría elegir según cuál sea la más conveniente para el dispositivo. La estructura para separar cada conjunto de información es con una coma; cada conjunto de información está compuesto por:
                 <ol>
-                    <li>El nombre del archivo de imagen</li>
-                    <li>El ancho intrinseco de la imagen en pixeles, este sera el tamaño real de la imagen, es importante tener en cuenta que se utiliza la unidad "W" no "px" como en otros casos </li>
+                    <li>El nombre del archivo de imagen.</li>
+                    <li>El ancho intrínseco de la imagen en píxeles. Este será el tamaño real de la imagen; es importante tener en cuenta que se utiliza la unidad "w" (o "W"), no "px" como en otros casos. </li>
                 </ol>
             </li>
             <li>
-                <b>Size: </b> Define el conjunto de condiciones de medios en los que se muestra cada imagen, por ejemplo el ancho de la pantalla, por lo tanto define en que hancho de pantalla seria correcto mostrar cada imagen, esta compuesto por:   
+                <b>sizes: </b> Define el conjunto de condiciones de medios en los que se muestra cada imagen, por ejemplo, el ancho de la pantalla, por lo tanto define en qué ancho de pantalla sería correcto mostrar cada imagen, está compuesto por:   
                 <ol>
-                    <li>La condición de medios en la que se indica mostrar cada image por ejmplo: (max-width: 600px)</li>
-                    <li>El ancho que finalmente ocupara la imagen cuando la condición de medios se cumpla, por ejemplo: (440px.), por lo general esta se define como menor al ancho de la pantalla para no afectar la experiencia del usuario</li>
+                    <li>La condición de medios en la que se indica mostrar cada imagen, por ejemplo: (max-width: 600px).</li>
+                    <li>El ancho que finalmente ocupará la imagen cuando la condición de medios se cumpla, por ejemplo: (440px). Por lo general esta se define como menor al ancho de la pantalla para no afectar la experiencia del usuario.</li>
                 </ol>
-                <b>Nota: En el ancho de la ranura se debe indicar una longitud abosuta (px, em) o una relativa (porcentaje),</b>
-            </li>
-            <p>EL siguente es un ejemplo de codigo, se puede apresiar que el ultmo conjunto de datos en el atributo "size"no posee condición de medios, esto se debe a que es el caso por defecto que se utilizara si ninguno de los casos anteriores se cumple, es importante tener en cuanta que el orden de los elemtos ya que el navegador eleguira el primer caso que sea compatible e ignorara todo lo que este posterior a este. </p>
+                <b>Nota: En el ancho de la ranura se debe indicar una longitud absoluta (px, em) o una relativa (porcentaje).</b>
+            </li> 
+            <p>El siguiente es un ejemplo de código; se puede apreciar que el último conjunto de datos en el atributo "sizes" no posee condición de medios, esto se debe a que es el caso por defecto que se utilizará si ninguno de los casos anteriores se cumple. Es importante tener en cuenta el orden de los elementos, ya que el navegador elegirá el primer caso que sea compatible e ignorará todo lo que esté posterior a este. </p>
             <img src="./img/ejmImgAjustable.PNG" alt="">
-            <p>En este codigo el navegador hace lo siguiete:</p>
+            <p>En este código el navegador hace lo siguiente:</p>
             <ol>
-                <li>Verifica el ancho del dispositivo</li>
-                <li>Buscara la primera condición de medios que se cumpla</li>
-                <li>Verificara la medida dada a la imgen en esa consulta de medios</li>
-                <li>Cargara la imagen en el atributo "srcset" que mejor coincida con la medida asicnada para la imagen</li>
+                <li>Verifica el ancho del dispositivo.</li>
+                <li>Buscará la primera condición de medios que se cumpla.</li>
+                <li>Verificará la medida dada a la imagen en esa consulta de medios.</li>
+                <li>Cargará la imagen en el atributo "srcset" que mejor coincida con la medida asignada para la imagen.</li>
             </ol>
-            <p>Los navegadores desactualizados que no soporten esta caracteristica simplemete la ignoraran y continuaran con la carga comun del atributo "src"</p>
-            <p>Una imagen en disco de 480px simepre tendra un tamaño mucho menor que una de 800px de ese modo se puede ahorrar ancho de banda y tiempo decarga al iniciar la paguina web</p>
-            <p><b>Nota: Nota: Algunos dispositivos moviles mienten sobre el ancho de su pantalla lo cual no es muy util para diseños receptivos, incluyendo (meta name="viewport" content="width=device-width") entre los metadatos de la paguina los abligas a utilizar su ancho real</b></p>
+            <p>Los navegadores desactualizados que no soporten esta característica simplemente la ignorarán y continuarán con la carga común del atributo "src".</p>
+            <p>Una imagen en disco de 480px siempre tendrá un tamaño mucho menor que una de 800px; de ese modo se puede ahorrar ancho de banda y tiempo de carga al iniciar la página web.</p>
+            <p><b>Nota: Algunos dispositivos móviles mienten sobre el ancho de su pantalla lo cual no es muy útil para diseños receptivos; incluyendo (&lt;meta name="viewport" content="width=device-width"&gt;) entre los metadatos de la página los obligas a utilizar su ancho real.</b></p>
             <h4>Cambiar la resolución de la imagen</h4>
-            <p>Otra forma de mejorar el consumo de ancho de banda así como el tiempo de carga de nuestra paguina es el de ofreser como opción al navegador la misma imagen pero con diferentes resoluciones, para esto se utiliza un metodo similar al anterior, es decir se utiliza el atributo "srcset" haciendo referencia a multiples imagenes, con la diferencia de que en esta ocación el tamaña en pixeles de las imagenes no es diferente, si no que se diferencia entre sí por la calidad de cada una.</p>
-            <p>Esto se realiza con la intención de que el navegador detecte la resolución a la que esta trabajando el computador y selecione la imagen acorde a esta, por lo tanto si el computador esta configurado con una resolución alta el navegador seleccionara una imagen con buena resolución, por otro lado si la configuración es para una resolución baja el navegador seleccionara la imagen con menor resolución, esto cobra sentido cuando tenemos en cuenta el espacio en memoria de cada imagen, ya que mientras mayor resolución mayor sera el peso de la imagen, de este modo podemos buscar la eficiencia de recursos  cargando solo los que sean necesarios en base al dispositivo desde el que se ingrese, un ejemplo de este codigo seria el sigueite: </p>
+            <p>Otra forma de mejorar el consumo de ancho de banda, así como el tiempo de carga de nuestra página, es la de ofrecer como opción al navegador la misma imagen pero con diferentes resoluciones; para esto se utiliza un método similar al anterior, es decir, se utiliza el atributo "srcset" haciendo referencia a múltiples imágenes, con la diferencia de que en esta ocasión el tamaño en píxeles de las imágenes no es diferente, sino que se diferencian entre sí por la calidad de cada una.</p>
+            <p>Esto se realiza con la intención de que el navegador detecte la resolución a la que está trabajando el computador y seleccione la imagen acorde a esta. Por lo tanto, si el computador está configurado con una resolución alta, el navegador seleccionará una imagen con buena resolución; por otro lado, si la configuración es para una resolución baja, el navegador seleccionará la imagen con menor resolución. Esto cobra sentido cuando tenemos en cuenta el espacio en memoria de cada imagen, ya que mientras mayor resolución mayor será el peso de la imagen; de este modo podemos buscar la eficiencia de recursos cargando solo los que sean necesarios en base al dispositivo desde el que se ingrese. Un ejemplo de este código sería el siguiente: </p>
             <img src="./img/ejmImgResolucion.PNG" alt="">
         </div>
         <div id="figcaption">
             <h3>Figure y Figcaption</h3>
-            <p>Se trata de elemtos para indicar que un texto esta binculado con una imagen(pie de imagen), se trata de elemtos con valor semantico para el uso de leectores de pantalla o motores de busqueda</p>
-            <p>La forma de emplearlo es que junto al elemto de imagen ("img") este contenido en un "figure" y el elemento "figcaption" conteniendo el contenido del pie de paguina, de la siguiete manera:</p>
+            <p>Se trata de elementos para indicar que un texto está vinculado con una imagen (pie de imagen); se trata de elementos con valor semántico para el uso de lectores de pantalla o motores de búsqueda.</p>
+            <p>La forma de emplearlo es que junto al elemento de imagen ("img") esté contenido en un "figure" y el elemento "figcaption" contenga el contenido del pie de página, de la siguiente manera:</p>
             <img src="./img/ejmFigcaption.PNG" alt="">
             <p>En este ejemplo el elemento "figcaption" dice al navegador, o a alguna tecnología de apoyo, que el texto que contiene describe la imagen que está contenida en el elemento "figure".</p>
             <p><b>Nota: Desde el punto de vista de la accesibilidad, los pies de imagen y el texto alternativo (Atributo "alt") cumplen funciones diferentes. Los pies de imagen benefician incluso a quien puede ver la imagen, mientras que el texto "alt" proporciona la misma función en una imagen ausente. Por tanto, los subtítulos y el texto "alt" no deberían decir lo mismo, porque ambos aparecen si la imagen no se muestra.</b></p>
-            <p><b>Nota: Un elemento figure podría contener varias imágenes, un trozo de código, audio, video, ecuaciones, una tabla, o cualquier otra cosa no exclusibamente imagenes</b></p>
-           </div>
+            <p><b>Nota: Un elemento figure podría contener varias imágenes, un trozo de código, audio, video, ecuaciones, una tabla, o cualquier otra cosa, no exclusivamente imágenes.</b></p>
+        </div>
         <div id="object">
             <h3>Object</h3>
-            <p>Representa junto con el elemento "embed" es una herramienta de incrustación de proposito general, en otras palabras se diferencia de "iframe" ya que "object" puede incrustar multiples tipos de contenido externo que incluyan tecnologuías de complemeto como Java Applets y Flash, en otras palabas puede ejecutar contenido externo y sus plug-in</p>
-            <p><strong>Nota: Un plug-in (complemeto) es un software que permite que el navegador ejecute un elemento con el cual no es compatible de forma nativa</strong></p>
-            <p>En sí el "object" es una tecnologuía heredada por HTML5, no es verdaderamente usado ya que los subprogramas con plug-in no se utilizan desde hace algunos años, pese a esto se puede dar alguna sircunstancia de que se encuentre como puede ser en intranets o proyectos empresariales. </p>
+            <p>Representa, junto con el elemento "embed", una herramienta de incrustación de propósito general; en otras palabras, se diferencia de "iframe" ya que "object" puede incrustar múltiples tipos de contenido externo que incluyan tecnologías de complemento como Java Applets y Flash; en otras palabras, puede ejecutar contenido externo y sus plug-in.</p>
+            <p><strong>Nota: Un plug-in (complemento) es un software que permite que el navegador ejecute un elemento con el cual no es compatible de forma nativa.</strong></p>
+            <p>En sí el "object" es una tecnología heredada por HTML5, no es verdaderamente usado ya que los subprogramas con plug-in no se utilizan desde hace algunos años; pese a esto, se puede dar alguna circunstancia de que se encuentre como puede ser en intranets o proyectos empresariales. </p>
         </div>
         <div id="picture">
             <h3>Picture</h3>
-            <p>Se trata de un elemto contenedor al igual que "audio" y "video", que contiene varios elemtos de origen los cuales proporcionana  varias fuentes diferentes para que el navegador elija entre ellas, este elemto se utliza para volver las imagenes en elemtos responsive, la estructura del elemto es la siguiente:</p>
+            <p>Se trata de un elemento contenedor al igual que "audio" y "video", que contiene varios elementos de origen los cuales proporcionan varias fuentes diferentes para que el navegador elija entre ellas. Este elemento se utiliza para volver las imágenes en elementos responsive; la estructura del elemento es la siguiente:</p>
             <img src="./img/ejmPicture.PNG" alt="">
-            <p>Como se puede observar el elemto "picture" esta compuesto por varios elemtos "sourse", de los cuales cada uno llama a una imagen alternativa a disposición del navegador, estos elemtos contienen el atributo "media" el cual define las condiciones de medios bajo las cuales se ejecuta cada imagen alternativa, así como tambien poseen el atributo "srcset" el cual contiene el llamado al archivo de imagen edecuado para esas condicones de medios. </p>
-            <p>En todo caso siempre es necesario incluir el elemto "img" antes del cierre del elemto "picture" esto ya que brinda el "medio" en el cual se mostraran las imagenes así como tambien actuara como un recurso alternativo para aquellos casos en los que algun navegador no sea conpatible con el elemto "picture".</p>
-            <p>Para crear images responsive no se puede utilizar JavaScript, esto es ya que lo primero que el navegador carga el HTML, eso incluye las imagenes, si hacemos que se analise el ancho de la pantalla con JavaScript o CSS para cuando estos sean interpretados las imagenes ya estaran siendo cargadas, por lo tanto seria igual a seleccionar cual elemto se utilizara luego de averlo descargado, en este caso se produsiria una sobrecarga de los elemetos, este seria el peor de los casos para una elemto responsive </p>
-            <p>Tambien podemos usar el elemto "picture" y el elemto "sourse" de una forma más tradicional para los navegadores antguos, la cual es utilizando los atributos lo atributos "type" "size" por ejemplo:</p>
+            <p>Como se puede observar, el elemento "picture" está compuesto por varios elementos "source", de los cuales cada uno llama a una imagen alternativa a disposición del navegador. Estos elementos contienen el atributo "media", el cual define las condiciones de medios bajo las cuales se ejecuta cada imagen alternativa, así como también poseen el atributo "srcset", el cual contiene el llamado al archivo de imagen adecuado para esas condiciones de medios. </p>
+            <p>En todo caso siempre es necesario incluir el elemento "img" antes del cierre del elemento "picture"; esto ya que brinda el "medio" en el cual se mostrarán las imágenes, así como también actuará como un recurso alternativo para aquellos casos en los que algún navegador no sea compatible con el elemento "picture".</p>
+            <p>Para crear imágenes responsive no se puede utilizar JavaScript; esto es ya que lo primero que el navegador carga es el HTML, eso incluye las imágenes. Si hacemos que se analice el ancho de la pantalla con JavaScript o CSS, para cuando estos sean interpretados las imágenes ya estarán siendo cargadas; por lo tanto, sería igual a seleccionar qué elemento se utilizará luego de haberlo descargado. En este caso se produciría una sobrecarga de los elementos; este sería el peor de los casos para un elemento responsive. </p>
+            <p>También podemos usar el elemento "picture" y el elemento "source" de una forma más tradicional para los navegadores antiguos, la cual es utilizando los atributos "type" y "sizes", por ejemplo:</p>
             <img src="./img/ejmPicture2.PNG" alt="">
-            <p>Algunas cosas a tener en cuanta son:</p>
+            <p>Algunas cosas a tener en cuenta son:</p>
             <ul>
-                <li>El atributo "media" solo se utiliza si se necesita crear imagenes responsive</li>
-                <li>En el elemento "sourse" solo se puede referenciar imagenes del tipo definido en "type"</li>
-                <li>Tambien se puede crear listas de referencias de elemtos en los atributos "srcset" y "sizes" separando los conjuntos de datos con una coma </li><br>
+                <li>El atributo "media" solo se utiliza si se necesita crear imágenes responsive.</li>
+                <li>En el elemento "source" solo se puede referenciar imágenes del tipo definido en "type".</li>
+                <li>También se puede crear listas de referencias de elementos en los atributos "srcset" y "sizes" separando los conjuntos de datos con una coma.</li><br>
             </ul>
-           <p><b>Nota:  recordar que el computador simplemete elejira el primer elemto que arroje un verdadero, por lo que la posición de los elemtos es importante</b></p>
-           <p><b>Nota: Tambiens hay que recordar que el atributo "srcset" puede referenciar varias imagens e incluso un atributo de tamaño por lo que se pudiera ofreser un conjunto de imagenes de varios tamaños e incluso diferentes resoluciones, sin embarrgo siendo realistas es poco probable que sea necesario hacerlo</b></p>
-           <p><b>Nota: Cuando utilice "media", no ofrezca también condiciones de medios dentro del atributo de "size"</b></p>
+            <p><b>Nota: Recordar que el computador simplemente elegirá el primer elemento que arroje un "verdadero", por lo que la posición de los elementos es importante.</b></p>
+            <p><b>Nota: También hay que recordar que el atributo "srcset" puede referenciar varias imágenes e incluso un atributo de tamaño, por lo que se pudiera ofrecer un conjunto de imágenes de varios tamaños e incluso diferentes resoluciones; sin embargo, siendo realistas, es poco probable que sea necesario hacerlo.</b></p>
+            <p><b>Nota: Cuando utilice "media", no ofrezca también condiciones de medios dentro del atributo de "sizes".</b></p>
         </div>
         <div id="video">
             <h3>Video</h3>
-            <p>La etiqueta video fue incorporada en HTML5 por lo que no esta disponible en verciones antiguas de los navegadores así como en aquellos que esten basados exclusivamente en el texto. Esta etiqueta permite incorporar videos facilmente en la paguina, la estructura de este elemto es:</p>
+            <p>La etiqueta video fue incorporada en HTML5, por lo que no está disponible en versiones antiguas de los navegadores, así como en aquellos que estén basados exclusivamente en el texto. Esta etiqueta permite incorporar videos fácilmente en la página; la estructura de este elemento es:</p>
             <img src="./img/ejmVideo.PNG" alt="">
-            <p>En este ejemplo se puede apreciar el "contenido de reserva", se puede estrucutrar de la forma que se desee pero en este caso se trata de un enlace que dirigira al usuarios hacia el video original para que pueda visualizarlo en algun reproductor web como youtube, la forma de incorporar esto es con un enlace ubicado en el interior del elemento "video", con la caracteritica de que se mostrara al usuario unicamente en los casos en los que el navegador no sea compatible con los elemetos HTML5 de "video".</p>
+            <p>En este ejemplo se puede apreciar el "contenido de reserva"; se puede estructurar de la forma que se desee, pero en este caso se trata de un enlace que dirigirá al usuario hacia el video original para que pueda visualizarlo en algún reproductor web como YouTube. La forma de incorporar esto es con un enlace ubicado en el interior del elemento "video", con la característica de que se mostrará al usuario únicamente en los casos en los que el navegador no sea compatible con los elementos HTML5 de "video".</p>
             <h4>Atributos</h4>
-            <p>Posee  diversos atributos, algunos de los cuales son exclusivos de este elemto:</p>
+            <p>Posee diversos atributos, algunos de los cuales son exclusivos de este elemento:</p>
             <ul>
-                <li><strong>srl: </strong> Aligual que en otras ocaciones en este se almacena la ruta al archivo de video a reproducir </li>
+                <li><strong>src: </strong> Al igual que en otras ocasiones, en este se almacena la ruta al archivo de video a reproducir. </li>
                 <li>
-                    <strong>Controls: </strong> Este elemto es exclusivo de el elemento "video", indica al navegador que se deven de incluir la interfaz de control de video del navegador, tambien se puede usar para crear una propia usando javaScript
+                    <strong>Controls: </strong> Este elemento es exclusivo del elemento "video"; indica al navegador que se debe incluir la interfaz de control de video del navegador. También se puede usar para crear una propia usando JavaScript.
                 </li>
-                <li><strong>El parrafo dentro de la etiqueta Video: </strong> Se mostrara en aquellas situaciones en las que el navegador no soporte la etiqueta "video" </li>
-                <li><strong>width: </strong> Define el ancho del recuadro de video en la paguina</li>
-                <li><strong>Height: </strong> Define el alto del recuadro de video en la paguina</li>
-                <li><strong>Autoplay: </strong> Indica una reproducción automatica del elemto mientras la paguina se carga, no es muy recomendable usarlo ya que los usuarios pueden encontrarlo molesto</li>
-                <li><strong>Loop: </strong>Hace que el vídeo (o audio) comience a reproducirse cada vez que finaliza.Esto tambien puede llegar a  resultar molesto para los usuarios</li>
-                <li><strong>Muted: </strong> Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada</li>
-                <li><strong>Poster: </strong> La URL de una imagen que se mostrará antes de reproducir el vídeo. Está destinado a ser utilizado para la miniatura del vídeo</li>
+                <li><strong>El párrafo dentro de la etiqueta Video: </strong> Se mostrará en aquellas situaciones en las que el navegador no soporte la etiqueta "video". </li>
+                <li><strong>width: </strong> Define el ancho del recuadro de video en la página.</li>
+                <li><strong>height: </strong> Define el alto del recuadro de video en la página.</li>
+                <li><strong>Autoplay: </strong> Indica una reproducción automática del elemento mientras la página se carga; no es muy recomendable usarlo ya que los usuarios pueden encontrarlo molesto.</li>
+                <li><strong>Loop: </strong> Hace que el vídeo (o audio) comience a reproducirse cada vez que finaliza. Esto también puede llegar a resultar molesto para los usuarios.</li>
+                <li><strong>Muted: </strong> Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada.</li>
+                <li><strong>Poster: </strong> La URL de una imagen que se mostrará antes de reproducir el vídeo. Está destinado a ser utilizado para la miniatura del vídeo.</li>
                 <li>
-                    <strong>Preload: </strong> Se utiliza para almacenar en memoria los archivos grandes; Puede tomar uno de estos tres valores:
+                    <strong>Preload: </strong> Se utiliza para almacenar en memoria los archivos grandes. Puede tomar uno de estos tres valores:
                     <ul>
-                        <li>None:  no almacena el archivo en el búfer</li>
-                        <li>Auto: almacena el archivo multimedia</li>
-                        <li>Metadata: almacena solo los metadatos del archivo</li>
+                        <li>None: no almacena el archivo en el búfer.</li>
+                        <li>Auto: almacena el archivo multimedia.</li>
+                        <li>Metadata: almacena solo los metadatos del archivo.</li>
                     </ul>
                 </li>
             </ul>
             <h4>Compatibilidad</h4>
-            <p>Ya que se esta incluyendo elemtos multimedia a la paguina entra en bigor un tema basteante importante, el cual es: el formato del elemto. Este es un aspecto indispensable al incorporar videos a una paguina web, esto devido  a que existen varias formatos de audio y video, así como varias formas de reproducirlos, por ello dependiendo del navegador que se utilice algunos de estos pueden no ser compatibles, esto puede originar que segun cual sea el formato del elemento que se este incorporando en la paguina este no podra ser visualizado en algunos navegadores.</p>
-            <p>Esta discrepenacia entre los navegadores se debe a que algunos de los formatos de audio y video estan sujetos a patentes, lo que imposibilita su empleo en aquellos que no se encuentren autorizados, por lo tanto estos navegadores recurren a formatos alternos que les brinden desempeños similares.</p>
-            <p>A la hora de implemetar un video en la paguina existen en la actualidad dos formatos establecidos: el formato "mp4" (principalmente soportado en Internet Explorer y Safari. ) y el formato "webm"(principalmente soportado por Firefox y Chrome), ya que cada uno sunciona en algunos navgadores y en otros no.</p>
-             <p>Lo recomendable es que al incororar un video en una paguina web es que se incorpore el elemento una vez por cada formato dentro de la etiqueta "source", es decir se utiliza dos veces el elemento "sourse" con el atributo "srl" en su interior, una ocación para el elemento en formato "mp4" y otra para el elemto en formato "webm" de la siguiente forma: </p>
+            <p>Ya que se están incluyendo elementos multimedia a la página, entra en vigor un tema bastante importante: el formato del elemento. Este es un aspecto indispensable al incorporar videos a una página web, debido a que existen varios formatos de audio y video, así como varias formas de reproducirlos; por ello, dependiendo del navegador que se utilice, algunos de estos pueden no ser compatibles. Esto puede originar que, según cuál sea el formato del elemento que se esté incorporando en la página, este no podrá ser visualizado en algunos navegadores.</p>
+            <p>Esta discrepancia entre los navegadores se debe a que algunos de los formatos de audio y video están sujetos a patentes, lo que imposibilita su empleo en aquellos que no se encuentren autorizados; por lo tanto, estos navegadores recurren a formatos alternos que les brinden desempeños similares.</p>
+            <p>A la hora de implementar un video en la página existen en la actualidad dos formatos establecidos: el formato "mp4" (principalmente soportado en Internet Explorer y Safari) y el formato "webm" (principalmente soportado por Firefox y Chrome), ya que cada uno funciona en algunos navegadores y en otros no.</p>
+             <p>Lo recomendable al incorporar un video en una página web es que se incluya el archivo una vez por cada formato dentro de la etiqueta "source", es decir, se utiliza dos veces el elemento "source" con el atributo "src" en su interior: una ocasión para el elemento en formato "mp4" y otra para el elemento en formato "webm", de la siguiente forma: </p>
             <img src="./img/videoFormatos.PNG" alt="">
-            <p>Esto ya que el elemento "sourse" apunta a la propia fuente del navegador, por lo tanto el navegador elejira el primer formato que este soporte, el elemento "source" tambien cuanta con el atributo "type", al cual le indica al navegador el formato en el que se encuentra cada elemto, al navegador puede leer este atributo y de este modo omitir los formatos no compatibles ejecutando solo los que sea capaz reproducir ahorrando de este modo recursos y tiempo, con la implemenntación de estos dos formatos el video deveria de poder ser ejecutado en casi todos los navegadores </p>
-            <p><strong>Nota: </strong>  Como mínimo la interfaz debe incluir una manera de empezar y terminar la reproducción, y ajustar el volumen.</p>
-            <h4>Incorporar subtitulos</h4>
-            <p>Esto se realiza creando un archivo "WebVTT", este tipo de archivo esta creado con el fin de almacenar cadenas de texto junto con metadatos para indicar en que momento se mostrara cada cadena de texto e incluso información de estilo y posicionamiento. Las cadenas de texto se denominan señales y existen diferentes tipos con diferentes usos:</p>
+            <p>Esto se hace ya que el elemento "source" apunta a la propia fuente del navegador; por lo tanto, el navegador elegirá el primer formato que este soporte. El elemento "source" también cuenta con el atributo "type", el cual le indica al navegador el formato en el que se encuentra cada elemento; el navegador puede leer este atributo y de este modo omitir los formatos no compatibles ejecutando solo los que sea capaz de reproducir, ahorrando de este modo recursos y tiempo. Con la implementación de estos dos formatos, el video debería poder ser ejecutado en casi todos los navegadores. </p>
+            <p><strong>Nota: </strong> Como mínimo, la interfaz debe incluir una manera de empezar y terminar la reproducción, y ajustar el volumen.</p>
+            <h4>Incorporar subtítulos</h4>
+            <p>Esto se realiza creando un archivo "WebVTT"; este tipo de archivo está creado con el fin de almacenar cadenas de texto junto con metadatos para indicar en qué momento se mostrará cada cadena de texto e incluso información de estilo y posicionamiento. Las cadenas de texto se denominan señales y existen diferentes tipos con diferentes usos:</p>
             <ul>
-                <li><strong>Subtitules (Subtitulos): </strong> Son traduciones de un lenguaje extrnajero usado en le video o audio</li>
-                <li><strong>Captions (Leyendas): </strong> Son transcripciones de dialogos o sonidos significativos para que puedan ser entendidas en situaciones en las que no se puede encuchar el audio </li>
+                <li><strong>Subtitles (Subtítulos): </strong> Son traducciones de un lenguaje extranjero usado en el video o audio.</li>
+                <li><strong>Captions (Leyendas): </strong> Son transcripciones de diálogos o sonidos significativos para que puedan ser entendidas en situaciones en las que no se puede escuchar el audio. </li>
                 <li><strong>timed descriptions (descripciones cronometradas): </strong> Texto para conversión a audio, para atender a personas con discapacidad visual.</li>
             </ul>
-            <p>Un ejemplo de la vista de un codigo WebVTT seria:</p>
+            <p>Un ejemplo de la vista de un código WebVTT sería:</p>
             <img src="./img/EjmWebVTT.PNG" alt="">
-            <p>Para que este archivo se muestre junto con la reproducción de mmedios HTML se debe:</p>
+            <p>Para que este archivo se muestre junto con la reproducción de medios HTML se debe:</p>
             <ol>
-                <li>Guardar el archivo ".vtt" en el lugar correcto</li>
-                <li>Enlazar el archivo ".vtt" con la biñeta "strack". La pista debe colocarse dentro de los elentos audio o video, pero después de todos los elementos de origen (sourse)</li>
-                <li>Usar la biñeta "kind para definir si el archivo se trata de subtitulos, leyendas o descripciones"</li>
+                <li>Guardar el archivo ".vtt" en el lugar correcto.</li>
+                <li>Enlazar el archivo ".vtt" con la etiqueta "track". La pista debe colocarse dentro de los elementos audio o video, pero después de todos los elementos de origen (source).</li>
+                <li>Usar la etiqueta "kind" para definir si el archivo se trata de subtítulos, leyendas o descripciones.</li>
             </ol>
-            <p>El siguiente es un ejmplo del codigo resultante</p>
+            <p>El siguiente es un ejemplo del código resultante:</p>
             <img src="./img/ejmSubtitulos.PNG" alt="">
          </div>
     </section>
-    <section id="SectImgVectoreales">
-        <h2>Incrustar imagenes vectoriales</h2>
+    <section id="SectImgVectoriales">
+        <h2>Incrustar imágenes vectoriales</h2>
         <div id="SVG">
-            <p>Existen dos tipos de imagenes las rasterizadas es decir todos aquellos formatos comunes com png, jpg y bmp estas estas compuestas por codigo que le indica al computador el donde va cada pixel, este codigo permanecera sin cambio sin importar el tamaño de la imagen por ello al agrandarla se empezara a "pixelear" y ver se borroza, esto ya que el navegador debe de compensar el lugar de cada pixel de la imagen. </p>
-            <p>El segundo tipo son las imagenes vertoreales, estas estan compuestas por algoritmos que definene la forma y ruta de esta, por lo tanto estos algoritmos pueden ser interpretados por el navegador para definir el como deberia de verse la imagen, podiendo de este modo adaptar la imagen a cambios de sus dimenciones sin que la nitidez de esta se vea afectada. otra caracteristicas es que las imagenes vectoriales son mucho más ligeras que sus contrapartes ya que en vez de contener la inforación de cada pixel solo necesitan contener los algoritmos de esta, El formato en el que se encuentran todas las imagnenes vectoreales es el SVG.</p>
+            <p>Existen dos tipos de imágenes: las rasterizadas, es decir, todos aquellos formatos comunes como png, jpg y bmp; estas están compuestas por código que le indica al computador dónde va cada píxel. Este código permanecerá sin cambios sin importar el tamaño de la imagen; por ello, al agrandarla se empezará a "pixelar" y verse borrosa, esto ya que el navegador debe compensar el lugar de cada píxel de la imagen. </p>
+            <p>El segundo tipo son las imágenes vectoriales; estas están compuestas por algoritmos que definen la forma y ruta de esta. Por lo tanto, estos algoritmos pueden ser interpretados por el navegador para definir cómo debería verse la imagen, pudiendo de este modo adaptar la imagen a cambios de sus dimensiones sin que la nitidez de esta se vea afectada. Otra característica es que las imágenes vectoriales son mucho más ligeras que sus contrapartes, ya que en vez de contener la información de cada píxel solo necesitan contener los algoritmos de esta. El formato en el que se encuentran todas las imágenes vectoriales es el SVG.</p>
             <h3>SVG</h3>
-            <p>Se trata de un lenguaje marcado (al igual que HTML) el cual contiene numerosos elemtos para definir las formas que se desean que aparezcan en las imagenes, por lo tanto SVG unicamente esta pensado para marcar graficos, no contenido por ello todos sus elemtos y atributos van enfocados a esto.</p>
-            <p>El siguente es un ejemplo de codigo y su respectivo resultado:</p>
+            <p>Se trata de un lenguaje de marcado (al igual que HTML) el cual contiene numerosos elementos para definir las formas que se desean que aparezcan en las imágenes. Por lo tanto, SVG únicamente está pensado para marcar gráficos, no contenido; por ello todos sus elementos y atributos van enfocados a esto.</p>
+            <p>El siguiente es un ejemplo de código y su respectivo resultado:</p>
             <img src="./img/ejmSVG.PNG" alt="">
             <img src="./img/resultadoSVG.PNG" alt="">
-            <p>Puede parecer que el SVG es facil de codificar sin embargo al tratarse de imagenes complejas deja de ser viable el hacerlo a mano, por ello muchas veces se utilizan <b>editores de graficos vectoreales</b> como <b>Inkscape o Illustrator los cuales permiten utilizar heramientas graficas para por ejemplo crear aproximaciones a fotos.</b>.</p>
-            <p>Otras de sus caracteristicas positivas son: </p>
+            <p>Puede parecer que el SVG es fácil de codificar; sin embargo, al tratarse de imágenes complejas deja de ser viable hacerlo a mano. Por ello muchas veces se utilizan <b>editores de gráficos vectoriales</b> como <b>Inkscape o Illustrator, los cuales permiten utilizar herramientas gráficas para, por ejemplo, crear aproximaciones a fotos.</b>.</p>
+            <p>Otras de sus características positivas son: </p>
             <ol>
-                <li>El texto de las imagenes seigue siendo accesible para los motores de busqueda lo que es positivo para el CEO de la paguina</li>
-                <li>Puedn integrarse muy bien con el estilo de la paguina ya que cada elemto de la imagen es un elemtoal que se le puede dar CSS o scripting atravez de JavaScript</li>
+                <li>El texto de las imágenes sigue siendo accesible para los motores de búsqueda, lo que es positivo para el SEO de la página.</li>
+                <li>Pueden integrarse muy bien con el estilo de la página ya que cada elemento de la imagen es un elemento al que se le puede dar CSS o scripting a través de JavaScript.</li>
             </ol>
-            <p>Sim embrago tambien cuanta con ciertas desventajas como:</p>
+            <p>Sin embargo, también cuenta con ciertas desventajas como:</p>
             <ul>
-                <li>El codigo puede complicarse rapidamente por que el tamaño y peso de los archivos se vuelve un factor a tener en cuenta, sin mencionar que tambien puede requerir un tiempo de procesamiento considerable</li>
-                <li>Pueden llegar a ser más dificiles de crear que las imagenes rasterizadas segun cual sea el tipo de imagen que se quiera crear</li>
-                <li>No es compatible con verciones antiguas de los navegadores</li>
+                <li>El código puede complicarse rápidamente por lo que el tamaño y peso de los archivos se vuelve un factor a tener en cuenta, sin mencionar que también puede requerir un tiempo de procesamiento considerable.</li>
+                <li>Pueden llegar a ser más difíciles de crear que las imágenes rasterizadas según cuál sea el tipo de imagen que se quiera crear.</li>
+                <li>No es compatible con versiones antiguas de los navegadores.</li>
             </ul>
-            <p>Por estas razones los graficos rasterizados son mejores para imagenes de presición como las fotos, aún así se puede leer este articulo para <a href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Inkscape.html">preparar SVG para la web</a></p>
-            <h4>Agregar SVG a la paguina </h4>
-            <p>Existen tres formas de hacer esto las cuales son </p>
+            <p>Por estas razones los gráficos rasterizados son mejores para imágenes de precisión como las fotos. Aún así, se puede leer este artículo para <a href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Inkscape.html">preparar SVG para la web</a>.</p>
+            <h4>Agregar SVG a la página </h4>
+            <p>Existen tres formas de hacer esto, las cuales son: </p>
             <ol>
                 <li>
-                    <p><strong>Incluirlo en un elemto "img"</strong></p>
-                    <p>Esta es la forma más rapida de hacerlo, para esto solo se necesitaria los atributos de width Height para delimitar el tamaño en el caso de que no posea una relación de aspecto inherente</p>
+                    <p><strong>Incluirlo en un elemento "img"</strong></p>
+                    <p>Esta es la forma más rápida de hacerlo; para esto solo se necesitarían los atributos de width y height para delimitar el tamaño en el caso de que no posea una relación de aspecto inherente.</p>
                     <p><strong>Ventajas</strong></p>
                     <ul>
-                        <li>Sintaxis simple con el texto aquivalente en el atributo "alt"</li>
-                        <li>Se puede convertir la imagen facilmente al incluir el "img" dentro de un "a"</li>
-                        <li>El navegador puede almacenar el SVG en la cache lo que resulta en tiempos de carga más rapidos para las paguinas que usen la imagen</li>
+                        <li>Sintaxis simple con el texto equivalente en el atributo "alt".</li>
+                        <li>Se puede convertir la imagen fácilmente al incluir el "img" dentro de un "a".</li>
+                        <li>El navegador puede almacenar el SVG en la caché, lo que resulta en tiempos de carga más rápidos para las páginas que usen la imagen.</li>
                     </ul>
                     <p><strong>Contras</strong></p>
                     <ul>
-                        <li>No se puede manipular la imagen con JavaScript</li>
-                        <li>Si se desea incorporar CSS a la imagen se debe de incluir en el codigo SVG de otra forma no tendra efecto</li>
+                        <li>No se puede manipular la imagen con JavaScript.</li>
+                        <li>Si se desea incorporar CSS a la imagen, se debe incluir en el código SVG; de otra forma no tendrá efecto.</li>
                         <li>No puede cambiar el estilo de la imagen con pseudoclases CSS (como :focus).</li>
                     </ul>
-                    <p><b>Compatibilidad con verciones anteriores de los navegadores </b></p>
-                    <p>Ya que las imagenes vectoriales (SVG) solo son ejecutables en verciones recientes de los navegadores, por lo tanto en aquellos casos en los que el usuario acceda a la paguina desde uno desactualizado este no podra visualizar los archivos SVG por ello para exitar que la experiencia del usuario se vea afectada existe una forma de solucionar la compativilidad con estos casos</p>
-                    <p>Para los navegadores que no admiten SVG lo recomendable es hacer referencia a una imagen rasterizada como png o jpg y usar el atributo "srcet" para hacer referencia al archivo SVG, ya que solo los navegadores actualizados reconocen este atributo seran capases de visualizar adecuadamente la imagen SVG mientra que los que no visualizaran la imagen rasterizada, el codigo resultante seria el siguiente. </p>
+                    <p><b>Compatibilidad con versiones anteriores de los navegadores </b></p>
+                    <p>Ya que las imágenes vectoriales (SVG) solo son ejecutables en versiones recientes de los navegadores, en aquellos casos en los que el usuario acceda a la página desde uno desactualizado, este no podrá visualizar los archivos SVG. Por ello, para evitar que la experiencia del usuario se vea afectada, existe una forma de solucionar la compatibilidad con estos casos.</p>
+                    <p>Para los navegadores que no admiten SVG, lo recomendable es hacer referencia a una imagen rasterizada como png o jpg y usar el atributo "srcset" para hacer referencia al archivo SVG. Ya que solo los navegadores actualizados reconocen este atributo, serán capaces de visualizar adecuadamente la imagen SVG mientras que los que no, visualizarán la imagen rasterizada. El código resultante sería el siguiente: </p>
                     <img src="./img/compatibleSVG.PNG" alt="">
-                    <p>Tambien se puede incorporar una imagen SVG como imagen de fondo del sitio web usando la tactica de compatbilidad expuesta anteriormente sin embarogo al hacerlo esta sujeta al mismo tipo de restricciones, esdecir no podra ser manipulado por JavaScript y podra interactuar de forma limitada con el CSS, el resultado seria el siguiete</p>
+                    <p>También se puede incorporar una imagen SVG como imagen de fondo del sitio web usando la táctica de compatibilidad expuesta anteriormente; sin embargo, al hacerlo está sujeta al mismo tipo de restricciones, es decir, no podrá ser manipulada por JavaScript y podrá interactuar de forma limitada con el CSS. El resultado sería el siguiente:</p>
                     <img src="./img/ejmSVGFondo.PNG" alt="">
-                    <p><strong>Nota: Si las imagenes vectoriales no se visualizan el el sitio web pudiese deberse a que el servidor no esta configurado correctamente para ejecutarlas</strong></p>
+                    <p><strong>Nota: Si las imágenes vectoriales no se visualizan en el sitio web, pudiese deberse a que el servidor no está configurado correctamente para ejecutarlas.</strong></p>
                 </li>
                 <li>
-                    <p><b>Incluir el codigo SVG en el documento HTML</b></p>
-                    <p>Otra forma de incluir imagenes SVG en nuestra paguina es incluir el codigo SVG directamente en nuestro documemto HTML, para esto se utiliza la etiqueta "svg", dentro de esta se debe desarrollar todo el texto SVG, ya que seria una mala practica intentar incluirlo fuera de esta, al implemetarlo de esta forma se dice que se esta utilizando SVG en linea; a continuación se muestra un ejemplo de codigo. </p>
+                    <p><b>Incluir el código SVG en el documento HTML</b></p>
+                    <p>Otra forma de incluir imágenes SVG en nuestra página es incluir el código SVG directamente en nuestro documento HTML; para esto se utiliza la etiqueta "svg". Dentro de esta se debe desarrollar todo el texto SVG, ya que sería una mala práctica intentar incluirlo fuera de esta. Al implementarlo de esta forma se dice que se está utilizando SVG en línea; a continuación se muestra un ejemplo de código. </p>
                     <img src="./img/ejmSVG2.PNG" alt="">
                     <p><strong>Ventajas</strong></p>
                     <ul>
-                        <li>Incluir el codigo SVG directamente en el documento HTML ahorra un llamado HTTP por lo que el tiempo de carga se ve un poco reducido</li>
-                        <li>Se puede implemetar el CSS en plenitud, se puede añadir clases e identificadores a los elemtos, De hecho, puede utilizar cualquier atributo de presentación SVG como propiedad CSS.</li>
-                        <li>Usar el SVG en linea es la unica forma en la que se pueden usar interacciones y animaciones CSS en la imagen SVG</li>
-                        <li>Puede usar el elemto SVG como hipervínculo envolviendolo por un elemto "a"</li>
+                        <li>Incluir el código SVG directamente en el documento HTML ahorra un llamado HTTP, por lo que el tiempo de carga se ve un poco reducido.</li>
+                        <li>Se puede implementar el CSS en plenitud: se pueden añadir clases e identificadores a los elementos. De hecho, puede utilizar cualquier atributo de presentación SVG como propiedad CSS.</li>
+                        <li>Usar el SVG en línea es la única forma en la que se pueden usar interacciones y animaciones CSS en la imagen SVG.</li>
+                        <li>Puede usar el elemento SVG como hipervínculo envolviéndolo en un elemento "a".</li>
                     </ul>
                     <p><strong>Desventajas</strong></p>
                     <ul>
-                        <li>Este metodo solo es oportuno si se utiliza el SVG en un solo lugar, ya que la duplicación hace que el mantenimineto requira muchos recursos</li>
-                        <li>El codigo SVG aumneta el pamaño del codigo HTML</li>
-                        <li>Con este metodo de inclusión el navegador no pogra almacenar la imagen SVG en la cache, por lo que no se se podra aguilizar las cargas futuras del elemto </li>
-                        <li>Se puede incluir un respaldo en un objeto "foreignObject" para aquellos navegadores obsoletos que no puedan aceptar la imagen SVG, sin embargo los navegadores modernos tambien descargaran la imagen de respaldo por lo tanto es necesario analizar si es necesario probocar esa sobrecarga solo para incluir los navegadores desactualizados</li>
+                        <li>Este método solo es oportuno si se utiliza el SVG en un solo lugar, ya que la duplicación hace que el mantenimiento requiera muchos recursos.</li>
+                        <li>El código SVG aumenta el tamaño del código HTML.</li>
+                        <li>Con este método de inclusión el navegador no podrá almacenar la imagen SVG en la caché, por lo que no se podrá agilizar las cargas futuras del elemento. </li>
+                        <li>Se puede incluir un respaldo en un objeto "foreignObject" para aquellos navegadores obsoletos que no puedan aceptar la imagen SVG; sin embargo, los navegadores modernos también descargarán la imagen de respaldo, por lo tanto es necesario analizar si es necesario provocar esa sobrecarga solo para incluir los navegadores desactualizados.</li>
                     </ul><br>
                 </li>
                 <li>
-                    <b>Incrustrar el SVG en un elemto "iframe"</b>
-                    <p>Esta es la tercera forma de incluir el SVG en la paguina, aunque definitivamente no es la mejor forma de hacerlo, para plicar este metodo se utiliza un "iframe de forma comun, haciendo referencia al archivo SVG y incluyendo un elemto "img" con una imagen  rasterizada para mostrar en aquellos casos en los que el navegador no acepte la viñeta "iframe" de la siguiente forma</p>
+                    <b>Incrustar el SVG en un elemento "iframe"</b>
+                    <p>Esta es la tercera forma de incluir el SVG en la página, aunque definitivamente no es la mejor forma de hacerlo. Para aplicar este método se utiliza un "iframe" de forma común, haciendo referencia al archivo SVG e incluyendo un elemento "img" con una imagen rasterizada para mostrar en aquellos casos en los que el navegador no acepte la etiqueta "iframe", de la siguiente forma:</p>
                     <img src="./img/ejmSVGIframe.PNG" alt="">
                     <p><b>Desventajas</b></p>
                     <ul>
-                        <li>Los "iframes" incluyen un respaldo que se muestra en caso de que la biñeta no pueda ser ejecutada por el navegador</li>
-                        <li>A menos que el elemto SVG y la paguina tenga el mismo origen(ruta) no se puede usar javaScript para manipular la imagen </li>
+                        <li>Los "iframes" incluyen un respaldo que se muestra en caso de que la viñeta no pueda ser ejecutada por el navegador.</li>
+                        <li>A menos que el elemento SVG y la página tengan el mismo origen (ruta), no se puede usar JavaScript para manipular la imagen. </li>
                     </ul>
                 </li>
             </ol>

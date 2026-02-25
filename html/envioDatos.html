@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Envio de datos</title>
+    <title>Envío de datos</title>
 </head>
 <body>
     <section>
-        <h1>Envio de datos de un formulario HTML</h1>
+        <h1>Envío de datos de un formulario HTML</h1>
         <div id="introduccion">
-            <p>Si se simplifica el funcionamiento de las paguinas web se podria definir como la metodologuía "cliente/servidor" la cual consiste en que un "cliente" la mayoria de los casos un navegador realiza una solicitud al servidor solicitando los datos requeridos para llevar a cabo una acción, a su vez el servidor retorn una respuesta hacia el cliente con dichos datos. Por su lado todas estas consultas y respuestas son enviadas atravez de cietos "protocolos" de transmisión de datos, en general uno de los más simples y estandarizados en la web es el protocolo HTTP </p>
-            <p>En ese sentido un formulario no es más que un mecanismo simple para que el usuario pueda realizar una consulta o enviar datos hacia un servidor atravez del protocolo HTTP, de hecho  basicamente todos los atributos de un formulario van enfocados a configurar la solicitud que se realizará, a su vez los forularios poseen dos atributos en particular los cuales estan enfoncados en definir de que forma se enviaran los datos haca el servidos, estos atributos son:</p>
+            <p>Si se simplifica el funcionamiento de las páginas web se podría definir como la metodología "cliente/servidor", la cual consiste en que un "cliente", la mayoría de los casos un navegador, realiza una solicitud al servidor solicitando los datos requeridos para llevar a cabo una acción; a su vez, el servidor retorna una respuesta hacia el cliente con dichos datos. Por su lado, todas estas consultas y respuestas son enviadas a través de ciertos "protocolos" de transmisión de datos; en general, uno de los más simples y estandarizados en la web es el protocolo HTTP.</p>
+            <p>En ese sentido, un formulario no es más que un mecanismo simple para que el usuario pueda realizar una consulta o enviar datos hacia un servidor a través del protocolo HTTP; de hecho, básicamente todos los atributos de un formulario van enfocados a configurar la solicitud que se realizará. A su vez, los formularios poseen dos atributos en particular los cuales están enfocados en definir de qué forma se enviarán los datos hacia el servidor; estos atributos son:</p>
         </div>
         <div id="action">
             <ul>
                 <li>
                         <h3>Atributo Action</h3> 
-                        <p>Este atributo define hacia donde se envaran los datos, su valor debe de ser una URL relativa o absoluta valida, en caso de que esta URL no sea definida entonces los datos seran enviados por defecto a la uicación de la paguinaque contiene el formulario, es decir a la paguina actual</p>
+                        <p>Este atributo define hacia dónde se enviarán los datos, su valor debe de ser una URL relativa o absoluta válida. En caso de que esta URL no sea definida, entonces los datos serán enviados por defecto a la ubicación de la página que contiene el formulario, es decir, a la página actual.</p>
                         <p>A continuación se muestran las tres formas en las que se puede indicar la URL:</p>
                         <ol>
                             <li><p>Uso de una URL absoluta:</p> <img src="./img/ejmAction1.PNG" alt=""></li>
-                            <li><p>Uso de una URL relativa</p> <img src="./img/ejmAction2.PNG" alt=""></li>
-                            <li><p>Caso de un formulario en el que no se espesifica el atributo "action"</p> <img src="./img/ejmAction3.PNG" alt=""></li>
+                            <li><p>Uso de una URL relativa:</p> <img src="./img/ejmAction2.PNG" alt=""></li>
+                            <li><p>Caso de un formulario en el que no se especifica el atributo "action":</p> <img src="./img/ejmAction3.PNG" alt=""></li>
                         </ol>
-                        <p>En el servidor el valor del atributo "action" debe ser un archivo capaz de manejar los datos entrantes, lo que incluye realzar la validación del lado del servidor luego de esto el servidor respone a la consulta ya sea enviado los datos solicitados, recargando la paguina o realizando una acción en esta.</p>
-                        <p>En sí los datos porvenientes de todos aquellos controladores que no sean anchivos se envian en pares de "name=value" es decir el valor de los datos es enviado en conjunto al nombre del elemento del que provienen.</p>
+                        <p>En el servidor el valor del atributo "action" debe ser un archivo capaz de manejar los datos entrantes, lo que incluye realizar la validación del lado del servidor; luego de esto el servidor responde a la consulta ya sea enviando los datos solicitados, recargando la página o realizando una acción en esta.</p>
+                        <p>En sí, los datos provenientes de todos aquellos controladores que no sean archivos se envían en pares de "name=value", es decir, el valor de los datos es enviado en conjunto al nombre del elemento del que provienen.</p>
                 </li>
             </ul>
         </div>                
@@ -34,95 +34,94 @@
             <ul>
                 <li>
                     <h3>Atributo Method</h3>
-                    <p>Este atributo define el metodo con el cual se enviaran los datos, esto debido a que el protocolo HTTP proporciona varias formas de enviar una solicitud, entre esos diversos metodos en la actualidad los más difundidos son el metodo "GET" y el "POST", cada uno de estos con sus propias bentajas y desbentajas así como marcadas diferencias a la hora de realizar las consultas HTTP. </p>
-                    <p>Para entender adecuadamente la diferencias entre ambos es necesario recalcar el funcionamiento del protocolo HTTP. Cada vez que se desea acceder a un recurso web el navegador envia una consulta HTTP al URL que alberga los archivos en cuentión, las consultas estan compuestas por dos partes diferentes:</p>
+                    <p>Este atributo define el método con el cual se enviarán los datos, esto debido a que el protocolo HTTP proporciona varias formas de enviar una solicitud. Entre esos diversos métodos, en la actualidad los más difundidos son el método "GET" y el "POST", cada uno de estos con sus propias ventajas y desventajas, así como marcadas diferencias a la hora de realizar las consultas HTTP.</p>
+                    <p>Para entender adecuadamente las diferencias entre ambos es necesario recalcar el funcionamiento del protocolo HTTP. Cada vez que se desea acceder a un recurso web, el navegador envía una consulta HTTP a la URL que alberga los archivos en cuestión; las consultas están compuestas por dos partes diferentes:</p>
                     <ol>
-                        <li><p><b>El encabezado:</b> Esta compuesto por los metadatos globales sobre las capacidades del navegador</p></li>
-                        <li><p><b>Un cuerpo: </b> Contiene la información necesaria para que el servidor porcese la solicitud espesifica que se esta realizando</p></li>
+                        <li><p><b>El encabezado:</b> Está compuesto por los metadatos globales sobre las capacidades del navegador.</p></li>
+                        <li><p><b>Un cuerpo:</b> Contiene la información necesaria para que el servidor procese la solicitud específica que se está realizando.</p></li>
                     </ol><br>
                     <ul>
                         <li>
-                            <h3>Metodo GET</h3>
-                            <p>Este metodo de envio de datos se utiliza principalmente para aquellos casos en los que se realisa una solicitud de datos al servidor, en estos casos el naveador envia una consulta con un cuerpo vacio lo que resulta en que cualquier dato de un formulario que se envie atravez de este metodo sera indexado al URL destino, es decir en el caso de que se envie información con un metodo GET estos datos se enviaran atravez de la URL por lo que seran vicibles lo que <b>no lo hace una buena opción para enviar información delicada</b>, un ejmplo de uso seria el siguiete:</p>
-                            <p>En base a este HTML</p>
+                            <h3>Método GET</h3>
+                            <p>Este método de envío de datos se utiliza principalmente para aquellos casos en los que se realiza una solicitud de datos al servidor. En estos casos el navegador envía una consulta con un cuerpo vacío, lo que resulta en que cualquier dato de un formulario que se envíe a través de este método será indexado a la URL destino; es decir, en el caso de que se envíe información con un método GET, estos datos se enviarán a través de la URL por lo que serán visibles, lo que <b>no lo hace una buena opción para enviar información delicada</b>. Un ejemplo de uso sería el siguiente:</p>
+                            <p>En base a este HTML:</p>
                             <img src="./img/ejmGET.PNG" alt="">
-                            <p>Se obtendria este resultado</p>
+                            <p>Se obtendría este resultado:</p>
                             <img src="./img/ejmGET2.PNG" alt="">
-                            <p>A la hora de anexar los datos a la URL existe un formato determinado, al culminar la dirección URL destino se añade un ? seguido de los datos en cadenas "nombre/valor" cada uno separado por un " ampersand (&)" de ese modo es que se envian los datos atrabes del metodo GET</p>
-                            <p>Por lo tanto la visualizacíon de los datos en la consulta GET seriá:</p>
+                            <p>A la hora de anexar los datos a la URL existe un formato determinado: al culminar la dirección URL destino se añade un ? seguido de los datos en cadenas "nombre/valor", cada uno separado por un ampersand (&); de ese modo es que se envían los datos a través del método GET.</p>
+                            <p>Por lo tanto la visualización de los datos en la consulta GET sería:</p>
                             <img src="./img/ejmGET3.PNG" alt="">
                         </li><br><br>
                         <li>
-                            <h3>Metodo POST</h3>
-                            <p>Este metodo de envio de datos se diferencia del GET en que los datos enviados con la solicitud no se anexaran al URL ni tampoco se podran visualizar en algun otro lugar ya que en el planteamiento de este metodo si se tiene en cuenta los datos enviados al servidor, los cueles son enviados dentro del cuerpo de la cunsulta, es decir que este metodo esta pensado para emplearse en todos aquellos casos en los que sea necesario enviar datos de caracter privados al servidor como por ejemplos las contraseñas de acceso. </p>
+                            <h3>Método POST</h3>
+                            <p>Este método de envío de datos se diferencia del GET en que los datos enviados con la solicitud no se anexarán a la URL ni tampoco se podrán visualizar en algún otro lugar, ya que en el planteamiento de este método sí se tienen en cuenta los datos enviados al servidor, los cuales son enviados dentro del cuerpo de la consulta; es decir, que este método está pensado para emplearse en todos aquellos casos en los que sea necesario enviar datos de carácter privado al servidor como, por ejemplo, las contraseñas de acceso.</p>
                             <p>Como ejemplo vamos a tomar el HTML mostrado anteriormente pero con el valor "POST" en el atributo "method":</p>
                             <img src="./img/ejmPOST1.PNG" alt="">
-                            <p>Por lo tanto la visualización de la consulta sería la siguiete:</p>
+                            <p>Por lo tanto la visualización de la consulta sería la siguiente:</p>
                             <img src="./img/ejmPOST2.PNG" alt="">
-                            <p>Los datos enviados se siguen enviando en los conjuntos "nombre/valor al igual que se sigue utilizando el " ampersand (&)" para delimitarlos, por otro lado el encabezado Content-Length indica el tamaño del cuerpo y el encabezado Content-Type indica el tipo de recurso enviado al servidor.</p>
+                            <p>Los datos enviados se siguen enviando en los conjuntos "nombre/valor", al igual que se sigue utilizando el ampersand (&) para delimitarlos; por otro lado, el encabezado Content-Length indica el tamaño del cuerpo y el encabezado Content-Type indica el tipo de recurso enviado al servidor.</p>
                         </li>
                     </ul>
                 </li>
             </ul>
-            <p><b>Nota: Es posible el realizar una solicitud al servidor utilizando el metodo HTTPS (HTTP encriptado) desde una paguina no segura sin mayor inconveneinte, ya que el HTTPS sifra los datos al enviarlos, sin embargo en el caso de que desde una paguina segura se pretenda realizar una consulta desde el protocolo HTTP sin encriptar los datos todos los navegadores deberian de disparar una alerta al usuario, ya que los datos no encriptados son bulnerales a ser interceptados por terceros.</b></p>
-            <p><b>Nota: Si se da la necesidad de enviar una gran cantidad de datos a un servidor lo más recomendable es emplear el metodo POST ya que algunos navegadores y servidores asignan un limite a los URL que aceptan y ya que este se trata del mecanismo para enviar los datos con el metodo GET se podria producir un error en estos casos</b></p>
-            </ul>
+            <p><b>Nota: Es posible realizar una solicitud al servidor utilizando el método HTTPS (HTTP encriptado) desde una página no segura sin mayor inconveniente, ya que el HTTPS cifra los datos al enviarlos. Sin embargo, en el caso de que desde una página segura se pretenda realizar una consulta desde el protocolo HTTP sin encriptar los datos, todos los navegadores deberían disparar una alerta al usuario, ya que los datos no encriptados son vulnerables a ser interceptados por terceros.</b></p>
+            <p><b>Nota: Si se da la necesidad de enviar una gran cantidad de datos a un servidor lo más recomendable es emplear el método POST, ya que algunos navegadores y servidores asignan un límite a las URL que aceptan y, ya que este se trata del mecanismo para enviar los datos con el método GET, se podría producir un error en estos casos.</b></p>
         </div>
         <div id="HTTP">
             <h3>Visualizar consultas HTTP</h3>
-            <p>Por lo general las consultas HTTP de una paguina web no se muestran al usuario en ningun punto del envio de datos, por lo tanto para poder visualizarlas es necesario el uso de herramientas especializadas como lo son <a href="https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html"> Firefox Network Monitor</a> y <a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a>, sin embargo pese a que estas herramientas ofrecen una bariedad de opciones al emplearlas en cuanto a lo que es la visualización de las consultas HTTP tambien es posible el visuañizarlas desde las "herramientas de desarrollador de google chrome, los pasos para poder visaulizar las consultas son los siguientes:</p>
+            <p>Por lo general las consultas HTTP de una página web no se muestran al usuario en ningún punto del envío de datos; por lo tanto, para poder visualizarlas es necesario el uso de herramientas especializadas como lo son <a href="https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.html">Firefox Network Monitor</a> y <a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a>. Sin embargo, pese a que estas herramientas ofrecen una variedad de opciones al emplearlas en cuanto a lo que es la visualización de las consultas HTTP, también es posible visualizarlas desde las herramientas de desarrollador de Google Chrome. Los pasos para poder visualizar las consultas son los siguientes:</p>
             <ol>
-                <li>Realizar clic derecho y se seleciona "inspecionar elemento"</li>
-                <li>Se seleciona la pestaña "Red (Network)"</li>
-                <li>Se seleciona el filtro "Todo (All)"</li>
-                <li>Se refresca la paguina</li>
-                <li>Se selecciona la consulta HTTP en el panel izquierdo, los datos se mostraran como una ventana emergente</li>
+                <li>Realizar clic derecho y se selecciona "inspeccionar elemento".</li>
+                <li>Se selecciona la pestaña "Red (Network)".</li>
+                <li>Se selecciona el filtro "Todo (All)".</li>
+                <li>Se refresca la página.</li>
+                <li>Se selecciona la consulta HTTP en el panel izquierdo; los datos se mostrarán como una ventana emergente.</li>
             </ol>
             <p>Un ejemplo de esto sería:</p>
             <img src="./img/EjmVerConsultaHTTP.PNG" alt=""><br><br>
             <h4>Visualizar Consultas HTTP del lado del servidor</h4>
-            <p>Es necesario recirdar que HTMLes un lenguaje de programación limitado a estructurar paguinas web, por lotanto se trata de un lenguaje de programamción basico en el ambito frontend, no obstante dado que los datos son enviados atrabes del protocolo HTTP desde el formulario de nuestra paguina hacia el servidor visualizar los datos recibidos en este no esta dentro de las capacidadesde HTML ya que este lenguaje unicamente es interpretado por los navegadores por lo tanto para visualizar y interacuar con los datos de la consulta son necesarios utilizar otros lenguajes de programamción, en particular aquellos que tengan un caracter Backend, un ejemplos de estos son: </p>
+            <p>Es necesario recordar que HTML es un lenguaje de programación limitado a estructurar páginas web; por lo tanto, se trata de un lenguaje de programación básico en el ámbito frontend. No obstante, dado que los datos son enviados a través del protocolo HTTP desde el formulario de nuestra página hacia el servidor, visualizar los datos recibidos en este no está dentro de las capacidades de HTML, ya que este lenguaje únicamente es interpretado por los navegadores; por lo tanto, para visualizar e interactuar con los datos de la consulta es necesario utilizar otros lenguajes de programación, en particular aquellos que tengan un carácter Backend. Un ejemplo de estos son:</p>
             <ul>
                 <li>Python</li>
-                <li>NodeJS</li>
+                <li>Node.js</li>
                 <li>PHP</li>
                 <li>Ruby</li>
                 <li>Java</li>
-                <p>A su vez estos lenguajes requieren de otro elemento llamado entorno de trabajo, la cual es por así decirlo un "habitad" en el cual los lenguajes pueden interpretarse por el computador, a la vez que brindan multiples herrameitnas y opciones utilies a lahora de trabajar</p>
-               <li> Django para Python, o tambien se puede usar Flask, sin embargo Django ofrece más herramientas y opciones</li>
-                <li>Express para Node.js</li>
-                <li>Laravel para PHP</li>
-                <li>Ruby On Rails para Ruby</li>
-                <li>Spring Boot para Java</li>
+                <p>A su vez, estos lenguajes requieren de otro elemento llamado entorno de trabajo, el cual es, por así decirlo, un "hábitat" en el cual los lenguajes pueden interpretarse por el computador, a la vez que brindan múltiples herramientas y opciones útiles a la hora de trabajar.</p>
+               <li>Django para Python (o también se puede usar Flask; sin embargo, Django ofrece más herramientas y opciones).</li>
+                <li>Express para Node.js.</li>
+                <li>Laravel para PHP.</li>
+                <li>Ruby On Rails para Ruby.</li>
+                <li>Spring Boot para Java.</li>
             </ul>
         </div>
         <div id="casoEspecial">
             <h3>Caso Especial</h3>
-            <p>Si se da el caso de que sea necesario enviar un archivo con un formulario HTML tendremos que tomar encuenta cierto aspecto del protocolo HTTP, este se trata de un protocolo de texto, esto es ideal cuando enviamos datos comunes ya que la mayoria de estos tambien son datos de texto, sin embargo la cosa cambia cuando enviamos un archivo, ya que este se trata de datos binarios, por lo tanto es necesario cumplir con ciertos requisitos antes de que sea posible realizar el envio del archivo en cuenstión.</p>
+            <p>Si se da el caso de que sea necesario enviar un archivo con un formulario HTML tendremos que tomar en cuenta cierto aspecto del protocolo HTTP: este se trata de un protocolo de texto. Esto es ideal cuando enviamos datos comunes ya que la mayoría de estos también son datos de texto; sin embargo, la cosa cambia cuando enviamos un archivo, ya que este se trata de datos binarios; por lo tanto, es necesario cumplir con ciertos requisitos antes de que sea posible realizar el envío del archivo en cuestión.</p>
             <h4>Atributo Enctype</h4>
-            <p>Para este tipo de casos existen el atributo "enctype", este atributo es realmente importante ya que se encarga de definir el valor del encabezado del tipo de contenido incluido en la solicitud HTTP, en otras palabra le indica al servidor que rios de datos esta recibiendo. Su valor por defecto es <b> application/x-www-form-urlencoded</b>, lo que significa "estos son datos de formularios que han sido codificados en parámetros de URL'."</p>   
-            <p>Por lo tanto si se desa enviar archivo atravez de un formulario HTML es necesario realizar tres pasos adicioonales:</p>
+            <p>Para este tipo de casos existe el atributo "enctype". Este atributo es realmente importante ya que se encarga de definir el valor del encabezado del tipo de contenido incluido en la solicitud HTTP; en otras palabras, le indica al servidor qué tipos de datos está recibiendo. Su valor por defecto es <b>application/x-www-form-urlencoded</b>, lo que significa "estos son datos de formularios que han sido codificados en parámetros de URL".</p>   
+            <p>Por lo tanto, si se desea enviar archivos a través de un formulario HTML es necesario realizar tres pasos adicionales:</p>
             <ol>
-                <li><p>Enviarlo atraves del metodo POST ya que no es posible codificar un archivo a formato URL para enviarlo atravez del metodo GET</p></li>
-                <li><p>Definir el valor del <b>atributo "enctype"</b> como <b>multipart/form-data</b> ya que de este modo los datos se dividiran en varias partes, una para cada archivo enviado a la vez queuna para los datos de textos que pudiesen ser enviados con el formulario</p></li>
-                <li><p>EL tercero es el má loguico, se trata de incluir en el formulario al menos un controlador del tipo  archivo <b>(input type="file")</b> para permitir que los usuarios seleccionen los archivos por enviar</p></li>
+                <li><p>Enviarlo a través del método POST, ya que no es posible codificar un archivo a formato URL para enviarlo a través del método GET.</p></li>
+                <li><p>Definir el valor del <b>atributo "enctype"</b> como <b>multipart/form-data</b>, ya que de este modo los datos se dividirán en varias partes: una para cada archivo enviado, a la vez que una para los datos de texto que pudiesen ser enviados con el formulario.</p></li>
+                <li><p>El tercero es el más lógico: se trata de incluir en el formulario al menos un controlador del tipo archivo <b>(input type="file")</b> para permitir que los usuarios seleccionen los archivos por enviar.</p></li>
             </ol>
             <h4>Por ejemplo:</h4>
             <img src="./img/ejmAtributoEnctype.PNG" alt="">
-            <p><b>Nota: Si es necesario es posible configurar al servidor con un limite de tamaño en los archivo por enviar, para evitar que los usuarios pueda intentar abusar de la paguina </b></p>
+            <p><b>Nota: Si es necesario, es posible configurar al servidor con un límite de tamaño en los archivos por enviar, para evitar que los usuarios puedan intentar abusar de la página.</b></p>
         </div>
         <div id="Seguridad">
             <h3>Seguridad</h3>
-            <p>Siempre que se realise algun tipo de envio de datos hacia nuestro servidor esto se puede convertir e una bulnerabilidad que terceros pudiesen aprovechar para atacar nuestra web, la bulnerabilidad en sí no proviene del formulario HTML, si no que proviene del como son manejados los datos por nuestro servidor </p> 
-            <p>Pese a que la seguridad web no es un tema que HTML sea capaz de abordar existen siertas reglas al plantearse la seguridad de una web, La base de todo es desconfiar de todos los usuarios incluyendo de nosotros, despues de todo incluso nuestro usuario puediese llegar a ser suplantado, aparte de eso es necesario considerar que los formularios son los centros de la mayoria de ataques a una web, por lo que todos los datos que sean enviados al servidor deben de ser chequeados sin ninguna excepción </p>
+            <p>Siempre que se realice algún tipo de envío de datos hacia nuestro servidor, esto se puede convertir en una vulnerabilidad que terceros pudiesen aprovechar para atacar nuestra web. La vulnerabilidad en sí no proviene del formulario HTML, sino que proviene de cómo son manejados los datos por nuestro servidor.</p> 
+            <p>Pese a que la seguridad web no es un tema que HTML sea capaz de abordar, existen ciertas reglas al plantearse la seguridad de una web. La base de todo es desconfiar de todos los usuarios incluyendo de nosotros; después de todo, incluso nuestro usuario pudiese llegar a ser suplantado. Aparte de eso, es necesario considerar que los formularios son los centros de la mayoría de ataques a una web, por lo que todos los datos que sean enviados al servidor deben ser chequeados sin ninguna excepción.</p>
             <p>Las tres reglas son:</p>
             <ul>
-                <li><p><b>Cuidado con los caracteres peligrosos: </b> ¿Que evita que se envie codigo malicioso al servidor? por ello es que se recomienda delimitar los caracteres disponibles para nuestro formulario, los caracteres pelogrosos pueden variar en función de que tecnologuía se ejecute en nuestro servidor aún así es muy importante tener gran precausión con las secuencias de caracteres que pudiesen llegar a ser codigo ejecutable</p></li>
-                <li><p><b>Delimitar la cantidad de datos: </b> Otra medida a tomar es delimitar el espacio disponible para ingresar texto a unicamnte el necesario acorde a los datos que estamos solicitando al usuario</p></li>
-                <li><p><b>Almacenar los archivos en entornos aislados: </b> Una gran peligro para una paguina web son los archivos mailicioso, por ello se recomienda albergarlos en un servidor diferente peritiendo su acceso atravez de un sub-dominio o incluso atravez de un dominio completamnete diferente</p></li>
+                <li><p><b>Cuidado con los caracteres peligrosos:</b> ¿Qué evita que se envíe código malicioso al servidor? Por ello es que se recomienda delimitar los caracteres disponibles para nuestro formulario. Los caracteres peligrosos pueden variar en función de qué tecnología se ejecute en nuestro servidor; aun así, es muy importante tener gran precaución con las secuencias de caracteres que pudiesen llegar a ser código ejecutable.</p></li>
+                <li><p><b>Delimitar la cantidad de datos:</b> Otra medida a tomar es delimitar el espacio disponible para ingresar texto a únicamente el necesario acorde a los datos que estamos solicitando al usuario.</p></li>
+                <li><p><b>Almacenar los archivos en entornos aislados:</b> Un gran peligro para una página web son los archivos maliciosos; por ello se recomienda albergarlos en un servidor diferente permitiendo su acceso a través de un subdominio o incluso a través de un dominio completamente diferente.</p></li>
             </ul>
-            <p>Siguiedo estas tres reglas es posible protegerse contra la mayoria de las bulnerabilidades de una paguina web, sin embargo no es suficiente con esto lo recomendable es siempre buscar un tercero experimentado que cheque la seguridad de la paguina, ya que de ese modo se puede encontrar nuevos puntos debiles de los cuales antesn no se tenia conciencia.</p>
-            <p><b>Nota: se puede leer más aserca de la seguridad de nuestra web en <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security"> este enlace</a></b></p>
+            <p>Siguiendo estas tres reglas es posible protegerse contra la mayoría de las vulnerabilidades de una página web; sin embargo, no es suficiente con esto. Lo recomendable es siempre buscar un tercero experimentado que chequee la seguridad de la página, ya que de ese modo se pueden encontrar nuevos puntos débiles de los cuales antes no se tenía conciencia.</p>
+            <p><b>Nota: se puede leer más acerca de la seguridad de nuestra web en <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security">este enlace</a>.</b></p>
         </div>
     </section>
 </body>

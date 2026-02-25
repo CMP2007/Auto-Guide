@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,94 +12,94 @@
         <h2>Tablas</h2>
         <div id="table">
             <h3>Table</h3>
-            <p>Esta se trata del la etiqueta contenedora de la tabla en si, marca su inicio y final, todos los elemtos de esta se deben incluir en su interior</p>
-            <p>Una recomendación a la hora de crear tablas es incluir una etiqueta "captión" en su interior, esta actua como el titulo de la tabla, es veneficioso para que los usuarios puedan reconocer el contenido de la paguina rapidamente, esto incluye a los ususarios con porblemas visuales que utilisen motores de leectura, por ello es que se recomienda que el titulo sea una descripción del contenido y que se coloque este elemto directamente debajo de la etiqueta "table" (fuera de la estructura de las celdas)</p>
+            <p>Se trata de la etiqueta contenedora de la tabla en sí; marca su inicio y final. Todos los elementos de esta se deben incluir en su interior.</p>
+            <p>Una recomendación a la hora de crear tablas es incluir una etiqueta "caption" en su interior; esta actúa como el título de la tabla y es beneficioso para que los usuarios puedan reconocer el contenido de la página rápidamente. Esto incluye a los usuarios con problemas visuales que utilicen motores de lectura; por ello se recomienda que el título sea una descripción del contenido y que se coloque este elemento directamente debajo de la etiqueta "table" (fuera de la estructura de las celdas).</p>
         </div>
         <div id="td">
             <h3>Td</h3>
-            <p>Este elemto define las celdas de la tabla, dentro de esta etiqueta se encuentra el contenido de la misma, ya sea otros elemtos HTML o algun texto, un aspecto positivo de las tablas es que cualquier otro elemento puede ser alvergado en sus celdas, una caracteristica de las celdas es que por defecto cada celda nueva se ubicara a la derecha de la anterior en la misma fila </p>
+            <p>Este elemento define las celdas de la tabla; dentro de esta etiqueta se encuentra el contenido de la misma, ya sean otros elementos HTML o algún texto. Un aspecto positivo de las tablas es que cualquier otro elemento puede ser albergado en sus celdas. Una característica de las celdas es que, por defecto, cada celda nueva se ubicará a la derecha de la anterior en la misma fila.</p>
         </div>
         <div id="tr">
             <h3>Tr</h3>
-            <p>Las tablas se estructuran en base a las filas de la misma,el elemto "tr" almacena en su interior todas la celdas que pertenezcan a una misma fila, por lo tanto cada fila es un conjunto de codigo independiente de otras fila, dentro de este elemto se mantiene la caracteristicas de que las nuevas celdas que se añadan se insertaran de izquierda a derecha </p>
+            <p>Las tablas se estructuran en base a las filas de la misma; el elemento "tr" almacena en su interior todas las celdas que pertenezcan a una misma fila. Por lo tanto, cada fila es un conjunto de código independiente de otras filas. Dentro de este elemento se mantiene la característica de que las nuevas celdas que se añadan se insertarán de izquierda a derecha.</p>
         </div>
         <div id="th">
             <h3>Th</h3>
-            <p>Este elemto define los encabezados de la tabla, basicamente funciona de la misma forma que lo hace una celda común con el extra de incluir un poco de estilos al texto que se encuentra en el interior, esto ya que se vissualiza por defecto en negritas, con el fin de resaltar los encabezados del resto de la información de la tabla, tambien incluye le atributo "scope" el cual permite mejorar la accesivilidad de la tabla, ya que vincula un encabezadocon su respectivos datos de la misma fila o columna, por lo tanto los lectores web pueden trabajar edacuadamente</p>
+            <p>Este elemento define los encabezados de la tabla; básicamente funciona de la misma forma que una celda común con el extra de incluir un poco de estilo al texto que se encuentra en el interior, ya que se visualiza por defecto en negritas con el fin de resaltar los encabezados del resto de la información. También incluye el atributo "scope", el cual permite mejorar la accesibilidad de la tabla al vincular un encabezado con sus respectivos datos de la misma fila o columna, permitiendo que los lectores web trabajen adecuadamente.</p>
         </div>
         <div id="CaracteristicasTabla">
             <h3>Profundizando en las tablas</h3>
             <div id="ColspanRowspan">
                 <h4>Colspan y Rowspan</h4>
-                <p>Estos atributos se utlizan para aquellos casos en los que queramos que una celda ocupe más de una columna o más de una fila, ambos atributos trabajan con un valor numerico sin decimales, el cual es igual al número de filas o columnas que se desea que ocupe la celda, por lo tanto:</p>
+                <p>Estos atributos se utilizan para aquellos casos en los que queramos que una celda ocupe más de una columna o más de una fila. Ambos atributos trabajan con un valor numérico sin decimales, el cual es igual al número de filas o columnas que se desea que ocupe la celda. Por lo tanto:</p>
                 <ul>
-                    <li><b>Colspan: </b> Define el número de columnas que una celda puede ocupar</li>
-                    <li><b>Rowspan: </b> Define el número de filas que una celda puede  ocupar</li>
-                    <p><b>Nota: se pueden usar ambos atrributos a la vez sin problema alguno</b></p>
+                    <li><b>Colspan: </b> Define el número de columnas que una celda puede ocupar.</li>
+                    <li><b>Rowspan: </b> Define el número de filas que una celda puede ocupar.</li>
+                    <p><b>Nota: Se pueden usar ambos atributos a la vez sin problema alguno.</b></p>
                 </ul>
             </div>
             <div id="TablasStyle">
                 <h4>Tablas y los estilos CSS</h4>
-                <p>En una tabla tambien es posible incorporar los estilos y clases CSS, sin embargo hacerlo de forma tradicional no es eficiente, ya que una tabla al estar constituida por numerosos elemtos internos seria necesario definir el estilo o una clase en cada uno, para simplificar esta tarea existen los elemtos "col" y "colgroup", esto tiene la función de definir cuales elemento tendran que estilos.</p>
-                <p>Su forma de uso consiste en el elemto "colgroup" actuando de contenedor del elemto "col", por otra parte el "col" actua vinculando el estilo a una serie de celdas, "col" se define en base a la pososción que tengan las celdas en sus respectivas filas, es decir: </p>
-                <p>Para la primera celdas de las filas se utiliza un "col", para las segundas un segundo "col", otro para las terceras así sucesibamente, si en algun momento quisieramos que a alguna serie de celdas no se le aplique un estilo iagualmente es necesario incluir su respectivo elemto "col" pero dejandolo vacio para de ese modo seguir llevando la co-relativade de las celdas, ya que de lo contrario se le aplicaria los estilos de otras a estas </p>
-                <p>Un ejmplo de este es:</p>
+                <p>En una tabla también es posible incorporar estilos y clases CSS; sin embargo, hacerlo de forma tradicional no es eficiente, ya que al estar constituida por numerosos elementos internos sería necesario definir el estilo o una clase en cada uno. Para simplificar esta tarea existen los elementos "col" y "colgroup", que tienen la función de definir qué elementos tendrán ciertos estilos.</p>
+                <p>Su forma de uso consiste en el elemento "colgroup" actuando como contenedor del elemento "col". Por otra parte, "col" vincula el estilo a una serie de celdas según la posición que tengan en sus respectivas filas; es decir: </p>
+                <p>Para la primera celda de las filas se utiliza un "col", para las segundas un segundo "col", y así sucesivamente. Si en algún momento quisiéramos que a alguna serie de celdas no se le aplique un estilo, igualmente es necesario incluir su respectivo elemento "col" pero dejándolo vacío para seguir la correlación de las celdas; de lo contrario, se aplicarían los estilos de otras columnas a estas.</p>
+                <p>Un ejemplo de esto es:</p>
                 <img src="./img/ejmCSSTablas.PNG" alt="">
-                <p>El resultado de este codigo es el siguiente</p>
+                <p>El resultado de este código es el siguiente:</p>
                 <img src="./img/resCSSTablas.PNG" alt="">
-                <p><b>Nota: Se puede usar los atributos colspan y rowspan en el elemento "col" perfectamente</b></p>
-                <p>Si se quiera añadir el estilo a las dos tablas seria de la siguiente manera</p>
+                <p><b>Nota: Se pueden usar los atributos colspan y rowspan en el elemento "col" perfectamente.</b></p>
+                <p>Si se quiere añadir el estilo a varias columnas sería de la siguiente manera:</p>
                 <img src="./img/ejmSpamTablas.PNG" alt="">
-                <p><b>Nota: "span tambienadopta un valor numerico sin decimales"</b></p>
-                 <p><b>Nota: Si se diera el caso de querer dejar una columana vacia se puede usar el codigo de simbolo especial "&nbsp;", este al ser interpretado se muestra una celda vacia</b></p>
-            <p><b>Nota: En la actualidad no es recomendable el emplear tablas para estructurar la paguina web, esta es una vieja practica que se utilizaba cuando CSS tenia mala compativilidad con los navegadores, actualmente esto es completamente contraproducenste ya que se optiene un codigo más limpio, un contenido más semantico y mejores diseños con la implentación de CSS en la paguina así como con el uso de los contenedores semanticos y no semanticos</b></p>
+                <p><b>Nota: "span" también adopta un valor numérico sin decimales.</b></p>
+                <p><b>Nota: Si se diera el caso de querer dejar una celda visualmente vacía, se puede usar el código de símbolo especial "&amp;nbsp;", que al ser interpretado muestra un espacio en blanco.</b></p>
+                <p><b>Nota: En la actualidad no es recomendable emplear tablas para estructurar la página web. Esta es una vieja práctica que se utilizaba cuando CSS tenía mala compatibilidad con los navegadores; actualmente es contraproducente, ya que se obtiene un código más limpio, contenido más semántico y mejores diseños con la implementación de CSS y contenedores semánticos.</b></p>
             </div>
             <div id="tablasEstructura">
                 <h4>Añadir estructura a las tablas</h4>
-                <p>Depeniendo del contenido que se llegue a tratar en la paguina puede que la estructura de nuestras tablas se vuekva más compleja, para todos estos casos existen algunas etiquetas con la espesifica función de definir la estructura de la tabla de forma clara, como tal la aplicación de estas etiquetas no afectan a la accesivilidad de la tabla de ninguna manera, lo que si hacen es ayudar a producir un codigo más limpio, estructurado y entendible a la vez que facilitar la aplicación de estilos CSS en esta, las atiquetas son las siguientes: </p>
+                <p>Dependiendo del contenido, la estructura de nuestras tablas se puede volver más compleja. Para estos casos existen etiquetas con la función específica de definir la estructura de forma clara. La aplicación de estas etiquetas no afecta la accesibilidad, pero ayuda a producir un código más limpio y facilita la aplicación de estilos CSS. Las etiquetas son las siguientes: </p>
                 <ul>
                     <li>
                         <div id="thead">
                             <h3>Thead</h3>
-                            <p>Este elemento es el que define la cabecera de la tabla, en otra palabra alverga todos los encabezados de las columnas aunque en ocaciones dependiendo de la tabla se pudiesen incluir otros elementos en la cabesera</p>
-                            <p><b>Nota: si se utilizan los elementos "col" y "colgroup" la cabecera debe de ir justo debajo</b></p>
+                            <p>Este elemento define la cabecera de la tabla; en otras palabras, alberga todos los encabezados de las columnas, aunque en ocasiones se pudiesen incluir otros elementos decorativos.</p>
+                            <p><b>Nota: Si se utilizan los elementos "col" y "colgroup", la cabecera debe ir justo debajo.</b></p>
                         </div>
                     </li>
                     <li>
                         <div id="tbody">
                             <h3>Tbody</h3>
-                            <p>Esta etiqueta es la que define cual será el cuerpo de la tabla, por lo tanto es el lugar en el que se encontrara la mayor parde del contenido, basicamente todo lo que no se encuentre en la cabesera o en el pie de tabla se encuentra en el cuerpo, en codigo, debido a la cantidad del contenido, pudiese crearce y ubicarse al ultimo (despues y por debajo de thead y tfoot) ya que siempre que este dentro de un elemto "table" se visualizara en el lugar correcto </p>
-                            <p><b>Nota: Tbody aún si no es definido en el codigo los navegadores lo incluyen por defecto, es bueno definirlo uno mismo para tener mejor control sobre la estructura y  los estilos de la tabla </b></p>
+                            <p>Esta etiqueta define el cuerpo de la tabla, que es el lugar donde se encuentra la mayor parte del contenido. Básicamente, todo lo que no esté en la cabecera o en el pie se encuentra en el cuerpo. En el código, debido a la cantidad de contenido, suele ubicarse después del thead.</p>
+                            <p><b>Nota: Aunque los navegadores incluyen el tbody por defecto si no se define, es bueno hacerlo uno mismo para tener mejor control sobre la estructura y los estilos.</b></p>
                         </div>
                     </li>
                     <li>
                         <div id="tfoot">
                             <h3>Tfoot</h3>
-                            <p>Este ultimo elemto cumple con la función de definir el pie de tabla, pudiese por ejemplo tratrse de la ultima fila la cual pudiese contener datos de las filas anteriores, una caracteristica de esta etiqueta es que en codigo se puede crear antes que el cuerpo de la tabla ya que siempre que se encuentre dentro de un elemento "table" se visualizara en el lugar correcto</p>
+                            <p>Este último elemento define el pie de tabla; por ejemplo, la última fila que contiene totales o resúmenes de los datos anteriores. Una característica es que en el código se puede colocar antes que el cuerpo ("tbody") por razones de accesibilidad, aunque visualmente se mostrará siempre al final dentro de "table".</p>
                         </div>
                     </li>
                 </ul>
-                <p><b>Nota: Un ejemplo de uso de estas etiquetas para aplicar estilos CSS seria: definir que tanto la cabecera como el pie de tabla se repitan en cada paguina que se muestre, y que el cuerpo de la tabla se muestre en una sola paguina, podiendo desplasarte por él con una barra de desplazamiento</b></p>
+                <p><b>Nota: Un ejemplo de uso de estas etiquetas para aplicar estilos CSS sería definir que la cabecera y el pie de tabla se repitan en cada página impresa, mientras el cuerpo se desplaza con una barra de scroll.</b></p>
             </div>
             <div id="malasPracticasTablas">
-                <h3>Malas practicas</h3>
-                <ul><li><p><b>Anidar tablas: </b> Como se ha dicho anteriormente las tablas pueden contener casi cualquier elemto dentro de estas, incluyendo otras tablas siempre y cuando estas tengan la estructura completa (table), a esto es a lo que se le conose como "anidar", sin embargo el poner una tabla dentro de otra no es una practica recomendable ya que da como resultado una estructura que puede ser dificil de entender para lo usuarios y para los motores de lectura, por lo tanto lo mejor es unicamente hacerlo en los casos que sea estrictamente necesario, ya que el el resto de los casos es probable que con "colspan" "rowspan" se obtenga mejores resultados</p></li></ul>
+                <h3>Malas prácticas</h3>
+                <ul><li><p><b>Anidar tablas: </b> Como se ha dicho anteriormente, las tablas pueden contener casi cualquier elemento, incluyendo otras tablas (anidación). Sin embargo, no es una práctica recomendable, ya que produce estructuras difíciles de entender para los usuarios y motores de lectura. Es mejor usar "colspan" y "rowspan" para obtener resultados similares de forma más limpia.</p></li></ul>
             </div>
             <div id="buenasPracticasTablas">
-                <h3>Buenas practicas</h3>
+                <h3>Buenas prácticas</h3>
                 <ul>
-                    <li><b>Usar encabezados de columna y de fila: </b> Esto es recomendable ya que ayuda a que los usuarios puedan interpretar de mejor forma los datos de la tabla, esto aplica incluso para los usuarios con problemas visuales, esto ya que por lo general estos utilizan motores de lectura para interactuar con la paguina, para un motor de lectura interpretar una tabla puede resultar complejo, sin embargo al incluir los encabezados el motor y por lo tanto el usuario pueden interpretar la tabla de una forma similar a como lo hacen alguien sin problemas visuales</li>
-                    <li><b>Elemento "caption": </b>como ya se ha dicho anterior mente es muy recomendable icluir un titulo para la tabla, ya que ayuda al usuario a descubrir si la tabla le sera de utilidad</li>
+                    <li><b>Usar encabezados de columna y de fila: </b> Ayuda a los usuarios a interpretar mejor los datos, especialmente a quienes usan lectores de pantalla, ya que estos motores pueden vincular la información de las celdas con sus títulos correspondientes.</li>
+                    <li><b>Elemento "caption": </b> Como se mencionó antes, incluir un título ayuda al usuario a identificar rápidamente si la información de la tabla le es de utilidad.</li>
                     <li>
-                        <p><b>Usar el atributo "scope": </b> Este atributo se utiliza en los elemtos "th" y le indica a los motores de lectura que encabezado pertenese a que fila o columna con el fin de que le permitan a sus usuarios leer todas las celdas del encabezado de una vez, esto lo hace atravez de dos valores: "col"(columna) y "row"(fila) como lo hacen en estos ejemplos:</p>
+                        <p><b>Usar el atributo "scope": </b> Se utiliza en los elementos "th" e indica a los motores de lectura a qué fila o columna pertenece un encabezado. Sus valores son: "col" (columna) y "row" (fila).</p>
                         <img src="./img/ejmScopeTablas1.PNG" alt="">
                         <img src="./img/ejmScopeTablas2.PNG" alt="">
-                        <p>scope tambien posee dos atributos más, "colgroup" y "rowgroup" estos valores definen aquellos casos en los que un encabezado ocupe más de una selda a la vez por lo tanto se utilizan en los casos que el encabezado avarque dos o mas columnas o filas</p>
+                        <p>También existen "colgroup" y "rowgroup" para casos donde un encabezado abarque un grupo completo de columnas o filas.</p>
                     </li>
                     <li>
-                        <p><b>Atributos "id" y encabezados: </b> Estos atributos tienen una función alternativa al uso del "scope" su forma de uso consiste en asignarle un id unico a cada elemto "th" por otrolado se le asigna un atributo "headers" a todos los elemtos "td", el "headers" debe de contener una lista (separada por espacios) del id de todos los elemtos que actuan como encabezado en esta celda sin importar si pertenesen a una fila o columna, de esta forma se define la posición explicita de cada celda</p>
+                        <p><b>Atributos "id" y encabezados: </b> Una alternativa al "scope" es asignar un "id" único a cada "th" y usar el atributo "headers" en los "td". El atributo "headers" contiene una lista de los IDs de los encabezados que corresponden a esa celda específica.</p>
                         <img src="./img/ejmIdTabla.PNG" alt="">
-                        <p><b>Nota: para que este metodo funcione adecuadamente se necesita encabezados de columna y de fila</b></p>
+                        <p><b>Nota: Para que este método funcione adecuadamente se necesitan encabezados tanto de columna como de fila claramente definidos.</b></p>
                     </li>
                 </ul>
             </div>

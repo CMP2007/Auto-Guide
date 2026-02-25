@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,60 +9,60 @@
 </head>
 <body>
     <section id="SectMetadatos">
-        <h2>Meta datos de una paguina</h2>
+        <h2>Metadatos de una página</h2>
        <div id="meta" >
             <h3>Meta</h3>
-            <p>Meta se utilizapara incluir y definir los metadotos de la pagina en el header, existen barios tipos de meta que pueden ser interpretados por el navegador</p>
-            <p>Un uso posible es definir que al ser compartida la pagina web en alguna red social el enlace se visualice con una descripción y alguna imagen predefinida, esto con la inteción de que la vista sea mas llamativa y brinde más información a los usuarios sobre el enlace de la paguina, por lo tanto brinde una mejor experiencia. <br> Para lograr esto muchas redes sociales crean suspropios protocolos de metadatos, los cuales son necesarios incluirlos en viñetas "meta" para lograr este efeto al ser compartidas en un red social </p>
+            <p>Meta se utiliza para incluir y definir los metadatos de la página en el header. Existen varios tipos de meta que pueden ser interpretados por el navegador.</p>
+            <p>Un uso posible es definir que, al ser compartida la página web en alguna red social, el enlace se visualice con una descripción y alguna imagen predefinida; esto con la intención de que la vista sea más llamativa y brinde más información a los usuarios sobre el enlace de la página, proporcionando así una mejor experiencia. <br> Para lograr esto, muchas redes sociales crean sus propios protocolos de metadatos, los cuales es necesario incluir en etiquetas "meta" para lograr este efecto al ser compartidas.</p>
+            
             <img src="./img/metadatoRedSocial1.PNG" alt="">
             <img src="./img/metadatoRedSocial2.PNG" alt="">
-            <p>Otros usos pueden ser: definir el autor de la pagina web, esto puede ser ventajoso utilizarlo por temas de contacto con el autor. <br> Tambien puede ser utilizado para incluir una brebe descripción del contenido de la pagina, es bueno utilizar palabras claves ya que esto puede ayudar a que la paguina se posiscione de mejor manera en los buscadores</p>
+            <p>Otros usos pueden ser: definir el autor de la página web, lo cual puede ser ventajoso por temas de contacto. <br> También puede ser utilizado para incluir una breve descripción del contenido de la página; es recomendable utilizar palabras clave, ya que esto puede ayudar a que la página se posicione de mejor manera en los buscadores.</p>
             <img src="./img/metaDescripcion.PNG" alt="">
             <h4>Atributos</h4>
             <ul>
-                <li><strong>name: </strong> se utiliza para espesificar el tipo de metadato del que se trata, es decir el tipo de información que contiene</li>
-                <li><strong>content:</strong>espesifica el contenido del metadato en sí </li>
+                <li><strong>name: </strong> Se utiliza para especificar el tipo de metadato del que se trata, es decir, el tipo de información que contiene.</li>
+                <li><strong>content: </strong> Especifica el contenido del metadato en sí.</li>
             </ul>
-            <p><strong>Nota: </strong>una etiqueta meta con el name = description y un atributo content componen la descripción que se puede encontrar debajo del enlace de la pagina en las buscaquedas de google u otros buscadores</p>
-            <h3>Definir iconos personalizados para la paguina web</h3>
-            <p>Para enriqueser el diseño de la web se usan los iconos personalizados, los cuales de usan en diversos contextos</p> 
-            <p>El más comun de estos es el fav.icon consiste en un icono predefinido que se mostrara en la parte del navegador que contiene las pestañas aviertas, y tambien se visualizara al guardar la paguina como favoritos</p>
-            <p>Para inplemetarlo se necesita guardar la imagen icono en el directorio del proyecto y añadir el siguiente codigo al "head". Un caso de uso real es cear varios "fav.ico", para que se apliquen uno u otro dependiendo del dispositivo desde el cual se vicite el sitio  </p>
+            <p><strong>Nota: </strong> Una etiqueta meta con el name="description" y un atributo content componen la descripción que se puede encontrar debajo del enlace de la página en las búsquedas de Google u otros buscadores.</p>
+            <h3>Definir iconos personalizados para la página web</h3>
+            <p>Para enriquecer el diseño de la web se usan los iconos personalizados, los cuales se usan en diversos contextos.</p> 
+            <p>El más común de estos es el favicon; consiste en un icono predefinido que se mostrará en la parte del navegador que contiene las pestañas abiertas, y también se visualizará al guardar la página como favoritos.</p>
+            <p>Para implementarlo se necesita guardar la imagen del icono en el directorio del proyecto y añadir el siguiente código al "head". Un caso de uso real es crear varios favicons para que se apliquen uno u otro dependiendo del dispositivo desde el cual se visite el sitio.</p>
             <img src="./img/favEjemplo.PNG" alt="">
-            <p><strong>Nota: </strong> Actualmete los navegadores aguantan formatos como png o incluso gif, sin embargo el formato .ico garantiza funcionar incluso en verciones desactualizadas</p>
-            <p><strong>Nota: </strong> Nota: Si tu sitio web utiliza una política de seguridad de contenido (content security policy o CSP) para mejorar la seguridad, la política afecta al favicon. Si te encuentras con problemas como que el favicon no se carga, comprueba que la respuesta a Content-Security-Policy del header para la directriz img-src (en-US) en la cabecera no impide el acceso a este.</p>
+            <p><strong>Nota: </strong> Actualmente los navegadores soportan formatos como PNG o incluso GIF; sin embargo, el formato .ico garantiza funcionar incluso en versiones desactualizadas.</p>
+            <p><strong>Nota: </strong> Si tu sitio web utiliza una política de seguridad de contenido (Content Security Policy o CSP) para mejorar la seguridad, esta afecta al favicon. Si te encuentras con problemas como que el favicon no carga, comprueba que la respuesta a Content-Security-Policy del header para la directriz img-src no impide el acceso a este.</p>
        </div>
        <div id="link" >
             <h3>Link</h3>
-            <p>Se trata de una etiqueta de metadatos, por lo cual siempre debe estar ubicada em el head de la paguina, esta etiqueta consta de varios usos entre los cuales estan:</p>
+            <p>Se trata de una etiqueta de metadatos, por lo cual siempre debe estar ubicada en el head de la página. Esta etiqueta consta de varios usos, entre los cuales están:</p>
             <ul>
-                <li><strong>Contener los llamados de archivos css: </strong> Al uzarse de esta forma es necesario que se acompañe de dos de sus atributos con un valor en particular:
+                <li><strong>Contener las llamadas de archivos CSS: </strong> Al usarse de esta forma es necesario que se acompañe de dos de sus atributos con un valor en particular:
                     <ul>
-                        <li><strong> rel="stylesheet":</strong> Indica que se trata de la hoja de estilos del documento</li>
-                        <li><strong>href=:</strong> Como siempre este debe contener la ruta al archivo css en cuantión </li>
+                        <li><strong> rel="stylesheet":</strong> Indica que se trata de la hoja de estilos del documento.</li>
+                        <li><strong>href:</strong> Debe contener la ruta al archivo CSS en cuestión.</li>
                     </ul>
-                    <p>Dependiendo de la verción del lenguaje que se maneje tambien puede ir acompañado de otros atributos complementarios como por ejemplo <strong>type="text/css"</strong></p>
+                    <p>Dependiendo de la versión del lenguaje que se maneje, también puede ir acompañado de otros atributos complementarios como, por ejemplo, <strong>type="text/css"</strong>.</p>
                 </li>
             </ul>
        </div>
        <div id="script" >
             <h3>Script</h3>
-            <p>Esta biñeta se usa para introducir codigo javaScript al documento, ya sea haciendo referencia a un archivo externo, para lo cual se usa el atributo "src" para definir la ruta del archivo. O incluyendo el codigo directamente en el interior de la biñeta, en este caso no se utiliza ningun atributo en particular</p>
+            <p>Esta viñeta se usa para introducir código JavaScript al documento, ya sea haciendo referencia a un archivo externo (para lo cual se usa el atributo "src" para definir la ruta del archivo) o incluyendo el código directamente en el interior de la etiqueta. En este último caso, no se utiliza ningún atributo en particular.</p>
        </div>
        <div id="idioma" > 
             <h3>Definir un Idioma</h3>
-            <p>Es muy recomendable indicar el idioma en el que esta escrito el contenido del sitio web, esto con el fin de que los buscadores y servcios puedan ubicar y trabajar de mejor forma con nuestro proyecto en base a las preferebcias linguisticas del usuario:</p>
-            <p>Para esto es necesarioincluir el atributo "lang" dentro de la biñeta "html" del ducumento, el valor de este atributo debe ser un codigo ISO, el cual define cal es el lenguaje a utilizar</p>
-            <p>En HTML5 el atributo lang es aplicable a cualquier elemento html, por lo que se puede definir un lenguaje en particular para un elemeto en espesfico, e incluso aplicar más de un lenguaje en la paguina de la siguiente forma: </p>
+            <p>Es muy recomendable indicar el idioma en el que está escrito el contenido del sitio web, esto con el fin de que los buscadores y servicios puedan ubicar y trabajar de mejor forma con nuestro proyecto en base a las preferencias lingüísticas del usuario.</p>
+            <p>Para esto es necesario incluir el atributo "lang" dentro de la etiqueta "html" del documento; el valor de este atributo debe ser un código ISO que define cuál es el lenguaje a utilizar.</p>
+            <p>En HTML5 el atributo lang es aplicable a cualquier elemento HTML, por lo que se puede definir un lenguaje en particular para un elemento en específico, e incluso aplicar más de un lenguaje en la página de la siguiente forma: </p>
             <img src="./img/ejmLang1.PNG" alt="">
-            <p>De esta forma los buscadores pueden entender perfectamente los lenguajes he incluso aplicar la pronuciación correcta en el caso de que se usa alguna acción de lectura en la paguina</p>
-            <p>En el caso de tener definido un lenguaje y necesitar aplicar otro en algun lugar serai así:</p>
+            <p>De esta forma los buscadores pueden entender perfectamente los lenguajes e incluso aplicar la pronunciación correcta en el caso de que se use alguna acción de lectura en la página.</p>
+            <p>En el caso de tener definido un lenguaje y necesitar aplicar otro en algún lugar, sería así:</p>
             <img src="./img/ejmLang2.PNG" alt="">
-            <p>Si se diese el caso de ser necesario usar tansolo algunas palabras en otro lenguaje tambie se puede usar el elemeto "span" con el atributo "lan" para definir el leguaje de solo una fracción del texto de la siguiente manera</p>
+            <p>Si se diese el caso de ser necesario usar tan solo algunas palabras en otro lenguaje, también se puede usar el elemento "span" con el atributo "lang" para definir el lenguaje de solo una fracción del texto de la siguiente manera:</p>
             <img src="./img/ejmLang3.PNG" alt="">
-            <p><strong>Nota: </strong> para saber el codigo de cada lenguaje basta con buscar "codigo ISO paises" en google</p>
+            <p><strong>Nota: </strong> Para saber el código de cada lenguaje basta con buscar "código ISO países" en Google.</p>
        </div>
     </section>
-
 </body>
 </html>
