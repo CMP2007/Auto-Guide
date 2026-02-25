@@ -1,4 +1,4 @@
-# 📔 Learning Wiki: [Subject Name, e.g., Web Fundamentals]
+# 📔 Learning Wiki: Web Development Fundamentals
 
 > **Project Status:** `Archived / Reference`  
 > This repository was my very first project, where I documented my initial steps into web development.
@@ -6,32 +6,34 @@
 ---
 
 ### 🌟 About this project
-This site was originally created as a **personal Wikipedia**. My goal was to process complex concepts (HTML, CSS, logic) to internalize them and explain them in my own words while experimenting with the visual design of static pages.
+This site was originally created as a **personal Wikipedia**. My goal was to process complex concepts (HTML, CSS, JS logic) to internalize them and explain them in my own words while experimenting with the visual design of static pages.
 
-Although this is an early work, it was the first time I allowed myself to create a "self-driven project," which marked the beginning of my journey as a developer.
+It showcases the evolution from basic HTML structures to more advanced topics like form validation and custom JS controllers.
 
 ### 🚀 Live Preview
 You can see the wiki in action here:  
-👉 **https://cmp2007.github.io/Auto-Guide/**
+👉 [https://cmp2007.github.io/Auto-Guide/](https://cmp2007.github.io/Auto-Guide/)
 
 ---
 
 ### 🛠️ Tech Stack
-* **HTML5:** Semantic structure for the notes.
-* **CSS3:** Custom design, layouts, and visual styles.
-* **Markdown:** Documentation organization.
+* **HTML5:** Semantic structure, complex tables, and native form validation.
+* **CSS3:** Layouts, UI pseudo-classes, and visual hierarchy.
+* **JavaScript:** Constraint Validation API, custom event listeners, and data handling.
 
 ### 🧠 Key Learnings
-1. **Information Synthesis:** How to explain technical terms in a simple way.
-2. **Design Fundamentals:** Managing hierarchy, color palettes, and web readability.
+1. **Information Synthesis:** Explaining technical terms (like RegEx or DOM interfaces) in a simple way.
+2. **Standard Compliance:** Implementing WCAG accessibility norms and semantic HTML.
+3. **Evolutionary Logic:** Moving from static content (v1) to interactive components (v2).
 
 ---
 
 ### 📂 Repository Structure
-* `/index.html`: Main landing page of the wiki.
-* `/[HTML]`: This folder contains several `.html` files where I paraphrased concepts, tag usage, and essential information.
-* `/[css]`: A page with various links and resources regarding the style language.
-* `/[JS]`: A page covering initial concepts and JavaScript applications.
+* `index.html`: Main landing page of the wiki.
+* `/html/`: Detailed notes on tags, tables, and form validation logic.
+* `/css/`: Resources and documentation about styling and selectors.
+* `/js/`: Advanced topics including custom controllers and server-side simulation.
+* `/img/`: Visual references and code snippets used throughout the wiki.
 
 ---
 *Note: This repository is maintained for historical purposes to showcase the evolution of my learning process.*
