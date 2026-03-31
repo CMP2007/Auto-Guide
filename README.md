@@ -10,6 +10,15 @@ This site was originally created as a **personal Wikipedia**. My goal was to pro
 
 It showcases the evolution from basic HTML structures to more advanced topics like form validation and custom JS controllers.
 
+---
+
+### Screenshot
+
+![](./img/Screenshot6.jpg)
+
+---
+
+
 ### 🚀 Live Preview
 You can see the wiki in action here:  
 👉 [https://cmp2007.github.io/Auto-Guide/](https://cmp2007.github.io/Auto-Guide/)
