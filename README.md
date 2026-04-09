@@ -1,5 +1,8 @@
 # 📔 Learning Wiki: Web Development Fundamentals
 
+> [!Note]
+>> This repository contains a legacy project from my early days as a programmer
+
 > **Project Status:** `Archived / Reference`  
 > This repository was my very first project, where I documented my initial steps into web development.
 
